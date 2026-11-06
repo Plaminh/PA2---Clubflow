@@ -10,6 +10,17 @@
 - Use at most one CSS framework. Preserve the selected CSS approach instead of replacing it.
 - Do not commit or overwrite unrelated work.
 
+## Required course sources
+
+- Before any implementation or implementation review, read all five course sources in `docs/requirements/`:
+  - `requirement.txt`
+  - `ClubFlow-final-project-brief.pdf`
+  - `PA2-rubric-responsive-prototype.pdf`
+  - `AI-LOG.md`
+  - `SELF_ASSESSMENT_REPORT template.pdf`
+- Treat the files in `docs/requirements/` as unchanged source material. The root `AI-LOG.md` and `SELF_ASSESSMENT_REPORT.md` are the team's working submission documents, not replacements for the course templates.
+- Implement and verify against both the final project brief and the PA2 rubric. Where the sources are silent, use a documented product-owner clarification instead of inventing scope.
+
 ## Responsive layout
 
 - Design mobile-first and verify at 360 px, 768 px, and 1280 px.

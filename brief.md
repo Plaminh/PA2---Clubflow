@@ -182,3 +182,29 @@ Finish with a concise report:
 - Missing team/source information.
 - Next step: implement the Create Recruitment Campaign screen.
 ```
+
+## Prompt 2 — 2026-11-06
+
+```text
+The five original course documents are now in docs/requirements/.
+Read all five files, keeping their existing filenames.
+
+Update AGENTS.md to reference these sources and require reading them before implementation.
+Update docs/PA2-CHECKLIST.md against the actual requirements and rubric.
+
+Create docs/TASKS.md recording:
+
+- Team leader: repository setup, review, integration, final verification, submission documentation and packaging.
+- The other two members: divide all three screens between themselves, including shared design/CSS, consistent sample data, implementation and page-level verification.
+- Leave names and the exact screen allocation as TODO until provided.
+
+Append this actual prompt to brief.md and record the work honestly in AI-LOG.md.
+Do not implement screens or change CSS.
+Do not invent evidence, team information or scores.
+Preserve unrelated work.
+
+Verify the changes and commit only this task's files:
+docs: add course sources and prepare team handoff
+
+Do not push. Report what changed and any unresolved requirements.
+```

@@ -1,0 +1,19 @@
+PA#2: your team decides the design, and may use React
+
+In PA#2 your team decides the layout, the content and the colours of your three pages. The screens in the brief are a starting point, not a picture to copy. Together your pages must deliver the features the brief gives its three screens, and none of the problems on the Fix these list may appear in them. A difference from the brief's screens does not cost marks.
+
+You may build the pages as static HTML and CSS, or with React. If you use React, also hand in the built dist/ folder and list the path of each screen in PROTOTYPE.md; we open it through a local server with JavaScript on. Static pages are marked as before. The brief and the rubric attached to the PA#2 assignment are updated. The deadline does not change.
+
+
+Final project: the whole class builds ClubFlow
+
+ClubFlow won the Final project poll. Congratulations to Lâm Gia Hưng, Trịnh Khánh Linh and Văn Viết Minh Phú, who each earn 0.5 bonus points on the final project.
+
+ClubFlow, a system that helps a student club run its recruitment from campaign to interview schedule, is now the final project for the whole class. Every team keeps its members and builds ClubFlow in its own repository. PA#2 to PA#6 are checked against the attached project brief, not against your own PA#1 proposal.
+
+What this means for you:
+• PA#1: your mark stands. Nobody redoes PA#1; the rubric line about redoing it after a change of topic does not apply here.
+• PA#2: build the three ClubFlow screens in the brief: Create Recruitment Campaign, Application Review and Interview Scheduling. The brief lists the problems in those screens that you need to fix. The assignment and its rubric are updated. The deadline is still Monday, November 9, 2026, 22:00.
+• If you have already started PA#2 on your own idea: keep your repository, your rules file and your CSS choices, and replace the pages.
+• PA#3 to PA#6: their rubrics will use the same brief.
+• The three authors are the product owners. They decide how ClubFlow behaves and what is in scope, and they build and are marked like every other team. They open a post "ClubFlow — questions for the product owners" in the Facebook group, starting with #WAD24KTPM1, and answer within two working days. Questions about marks and deadlines go to the lecturer.
