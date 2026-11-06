@@ -208,3 +208,81 @@ docs: add course sources and prepare team handoff
 
 Do not push. Report what changed and any unresolved requirements.
 ```
+
+## Prompt 3 — 2026-11-06
+
+```text
+Prepare this ClubFlow PA2 repository for handoff to two developers.
+
+Read AGENTS.md, all documents in docs/requirements/, and the existing project documentation first.
+
+Roles:
+
+- Team leader: repository setup, review, integration, final verification, submission documentation and packaging.
+- Two developers: divide all three screens between themselves, agree on shared design and sample data, implement and fix their screens.
+- Do not assign screen implementation to the team leader.
+- Keep unknown names, student IDs and exact screen allocation as TODO.
+
+Tasks:
+
+1. Create or update docs/SCREEN-CONTRACT.md:
+
+- Map index.html, review\.html and scheduling.html to the three required ClubFlow screens.
+- List each screen's required UI features using the actual source documents.
+- Define relative navigation between the screens.
+- List the eight Fix these problems.
+- Distinguish static prototype requirements from working backend functionality.
+- Record shared data that the developers must agree on before coding: campaign identity, timeline, positions, applications, interviewers, rooms and consistent counts.
+- Leave visual design and actual sample-data choices to the developers.
+
+2. Update docs/TASKS.md:
+
+- Record the roles above.
+- Require the developers to assign an owner to each screen and to shared CSS.
+- Require agreement on shared styles and sample data before parallel implementation.
+- Define handoff requirements per screen:
+  implementation, actual verification at 360/768/1280 with JavaScript disabled,
+  three full-page screenshots, W3C result with zero errors,
+  actual prompts, honest AI-log entries, and meaningful commits.
+- Require the leader to repeat integration checks after merging.
+
+3. Add a concise collaboration section to README.md:
+
+- Open index.html directly; no build required for the selected static stack.
+- Developers create feature branches from the latest main.
+- Use one implementation branch per screen:
+  feat/campaign
+  feat/application-review
+  feat/interview-scheduling
+- Agree on ownership of shared CSS before changing it.
+- Submit changes through pull requests for leader review.
+- Preserve meaningful per-screen commits when merging.
+- Keep brief.md and AI-LOG.md entries from both developers; resolve conflicts by retaining both histories.
+- Never commit fabricated evidence or claim checks that were not run.
+
+4. Review repository readiness:
+
+- Required scaffold files exist.
+- HTML navigation and stylesheet paths resolve.
+- Required documentation and source files are not Git-ignored.
+- No contradiction between README, AGENTS, PROTOTYPE, TASKS and the selected static stack.
+- Keep self-assessment scores TBD.
+- List outstanding team decisions separately from actual setup blockers.
+
+5. Append this actual prompt to brief.md and record the task honestly in AI-LOG.md.
+
+Do not implement screens, choose a visual design, modify CSS, generate fake evidence, or add dependencies.
+Preserve unrelated work.
+
+Verify the changes and commit only this task's files:
+docs: prepare developer handoff and screen requirements
+
+Do not push.
+
+Report:
+
+- Changes made.
+- Checks actually performed.
+- Remaining decisions for the two developers.
+- Whether the repository is ready for them to start.
+```

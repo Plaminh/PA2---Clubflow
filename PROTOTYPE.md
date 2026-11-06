@@ -4,6 +4,7 @@
 
 - TODO — Full name — Student ID
 - TODO — Full name — Student ID
+- TODO — Full name — Student ID
 
 ## 2. How to open it
 
@@ -22,7 +23,7 @@ Open `index.html` directly in a browser. No installation, build step, local serv
 - Plain CSS is used because no earlier CSS approach exists in this repository.
 - The scaffold is mobile-first and uses a shared fluid container.
 - The navigation is available on every page and uses direct relative links.
-- TODO: Choose the final visual direction, component patterns, content hierarchy, and screen-specific layouts after reviewing the missing final brief and rubric.
+- TODO: The two developers must agree on the final visual direction, component patterns, content hierarchy, and screen-specific layouts before implementation.
 
 ## 5. Not wired yet
 

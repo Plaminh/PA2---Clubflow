@@ -4,6 +4,7 @@ Submitted by:
 
 - TODO — Student ID — Full name
 - TODO — Student ID — Full name
+- TODO — Student ID — Full name
 
 Total I claim: TBD / 100
 
@@ -13,7 +14,7 @@ Total I claim: TBD / 100
 | Responsive | 25 | TBD | Pending three-width checks and screenshots. |
 | Semantic, valid HTML | 20 | TBD | Pending final semantic review and W3C validation. |
 | Design you can check | 10 | TBD | Pending implementation and design evidence. |
-| Brief and rules file | 10 | TBD | Pending review against the missing final brief and rubric. |
+| Brief and rules file | 10 | TBD | Course sources and rules are present; final evidence remains pending. |
 | AI-LOG.md | 10 | TBD | Pending completion of the project AI log. |
 | Commit history | 5 | TBD | Pending implementation and responsive-pass commits. |
 | **Total** | **100** | **TBD** | Implementation and final verification remain pending. |
