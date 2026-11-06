@@ -1,0 +1,26 @@
+# Editor and OS clutter
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Temporary and generated files
+tmp/
+temp/
+*.tmp
+*.log
+*.zip
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencies (not used by this project)
+node_modules/
