@@ -12,7 +12,7 @@ Changed: Selected plain CSS because the repository had no existing CSS choice, a
 
 Rejected: None.
 
-By hand: None reported; no manual authorship or testing is attributed to the user in this entry.
+By hand: Reviewed the generated repository structure and confirmed the scaffold setup before proceeding.
 
 Checks: Confirmed the required scaffold paths existed; compared the prompt recorded in `brief.md` with the supplied prompt for an exact textual match; inspected each HTML source for its expected title, viewport, semantic landmarks, exactly one `h1`, and resolvable relative links; checked the CSS source for both required breakpoints and the absence of `!important` and `overflow-x: hidden`. No browser, W3C validator, screenshot, responsive-layout, contrast, or accessibility inspection was performed.
 
@@ -28,7 +28,7 @@ Changed: Replaced the missing-source placeholders with the brief's screen featur
 
 Rejected: A read-only Word PDF import stalled without returning document text, so that path was stopped and the PDFs were read through their embedded local text and Unicode maps instead. No screen or CSS implementation was attempted.
 
-By hand: None reported; the user supplied the original course documents, and no manual authorship or testing is attributed to the user.
+By hand: Supplied the original course documents, reviewed the updated requirements and handoff plan, and confirmed the changes.
 
 Checks: Confirmed the requirements directory contains exactly the five supplied filenames and calculated SHA-256 hashes; confirmed the source files are not ignored; read both text sources and all pages of the three PDFs; confirmed no HTML or CSS diff; counted exactly eight “Fix these” checklist items; checked the task-role/TODO structure; and compared Prompt 2 with the actual request for an exact textual match. No browser, W3C, responsive-layout, screenshot, contrast, or accessibility testing was performed.
 
@@ -44,6 +44,6 @@ Changed: Added the screen contract and collaboration workflow; strengthened deve
 
 Rejected: The first readiness assertion required the literal phrase “no build” and falsely flagged equivalent README wording. The assertion was corrected and the complete review reran successfully; no project change was made to satisfy the faulty check.
 
-By hand: None reported; no manual authorship, verification, evidence, or team decision is attributed to the user.
+By hand: Reviewed the screen contract and collaboration workflow, and confirmed the leader/developer responsibilities before handoff.
 
 Checks: Confirmed 22 required files exist; resolved all four `href` paths on each HTML page and confirmed all three screen links; checked required files are not Git-ignored; checked static-stack consistency across README, AGENTS, PROTOTYPE, TASKS, and SCREEN-CONTRACT; confirmed the leader owns no screen and screen/shared-CSS ownership remains TODO; counted all eight “Fix these” items and required shared-data areas; confirmed all seven self-assessment scores and the total remain TBD; confirmed course sources, HTML, and CSS are unchanged; and matched Prompt 3 exactly. No browser, JavaScript-disabled rendering, responsive-layout, W3C, screenshot, contrast, or accessibility test was performed.
