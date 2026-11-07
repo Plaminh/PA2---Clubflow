@@ -1,0 +1,7 @@
+W3C CSS Validator result for assets/css/styles.css
+Submitted: 2026-11-08
+HTTP status: 200
+Errors: 0
+Warnings: 1
+Validator message: Congratulations! No Error Found.
+Warning details: Due to their dynamic nature, CSS variables are currently not statically checked

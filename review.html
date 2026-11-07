@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,26 +10,121 @@
     <header class="site-header">
       <div class="container">
         <p class="site-name">ClubFlow</p>
-        <nav aria-label="Primary navigation">
+        <nav aria-label="Điều hướng chính">
           <ul class="site-nav">
-            <li><a href="index.html">Create campaign</a></li>
-            <li><a href="review.html" aria-current="page">Application review</a></li>
-            <li><a href="scheduling.html">Interview scheduling</a></li>
+            <li><a href="index.html">Chiến dịch</a></li>
+            <li><a href="review.html" aria-current="page">Duyệt hồ sơ</a></li>
+            <li><a href="scheduling.html">Xếp lịch</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main class="container">
-      <h1>Application Review</h1>
-      <section class="placeholder" aria-labelledby="implementation-status">
-        <h2 id="implementation-status">Implementation placeholder</h2>
-        <p>This screen is scaffolded only. The application review interface will be implemented in a later project step.</p>
+      <div class="page-heading">
+        <div>
+          <p class="eyebrow">Bước 2 / 3 · CLB Công nghệ &amp; Sáng tạo</p>
+          <h1>Application Review</h1>
+          <p>Danh sách hồ sơ của chiến dịch tuyển thành viên 2026 · Đóng đơn 30/10/2026.</p>
+        </div>
+        <a class="button button--secondary" href="index.html">← Về chiến dịch</a>
+      </div>
+
+      <ol class="flow-steps" aria-label="Tiến trình tuyển thành viên">
+        <li class="flow-step"><span class="flow-step-number">1</span> Tạo chiến dịch</li>
+        <li class="flow-step" aria-current="step"><span class="flow-step-number">2</span> Duyệt hồ sơ</li>
+        <li class="flow-step"><span class="flow-step-number">3</span> Xếp lịch phỏng vấn</li>
+      </ol>
+
+      <section class="stack" aria-label="Thống kê hồ sơ">
+        <div class="stats-grid">
+          <div class="stat-card"><span class="stat-value">6</span><span class="stat-label">Tổng hồ sơ</span></div>
+          <div class="stat-card"><span class="stat-value">5</span><span class="stat-label">Ứng viên riêng biệt</span></div>
+          <div class="stat-card"><span class="stat-value">4</span><span class="stat-label">Qua vòng CV</span></div>
+          <div class="stat-card"><span class="stat-value">2</span><span class="stat-label">Chờ duyệt 1 · Loại 1</span></div>
+        </div>
+
+        <section class="card" aria-labelledby="applications-title">
+          <div class="card-heading">
+            <div>
+              <h2 id="applications-title">Hồ sơ ứng tuyển</h2>
+              <p>6 hồ sơ · 5 ứng viên · Trang 1/2</p>
+            </div>
+            <button class="button button--secondary" type="button">Xuất CSV</button>
+          </div>
+          <div class="toolbar">
+            <div class="field">
+              <label for="application-search">Tìm tên hoặc mã hồ sơ</label>
+              <input id="application-search" name="application-search" type="search" placeholder="Ví dụ: CF-026">
+            </div>
+            <div class="field">
+              <label for="position-filter">Vị trí</label>
+              <select id="position-filter" name="position-filter">
+                <option>Tất cả vị trí</option>
+                <option>Sản phẩm số</option>
+                <option>Sáng tạo nội dung</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="status-filter">Trạng thái</label>
+              <select id="status-filter" name="status-filter">
+                <option>Tất cả trạng thái</option>
+                <option>Chờ duyệt</option>
+                <option>Qua vòng CV</option>
+                <option>Loại ở vòng CV</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="split-layout">
+            <section aria-labelledby="list-title">
+              <h3 id="list-title">Danh sách · Mới nhất trước</h3>
+              <ul class="application-list">
+                <li><div class="application-list-item"><div><strong>CF-026 · Nguyễn Minh Anh</strong><br><span>Sản phẩm số · 14/10/2026 · Qua vòng CV</span></div><button class="button button--quiet" type="button">Review</button></div></li>
+                <li><div class="application-list-item"><div><strong>CF-027 · Nguyễn Minh Anh</strong><br><span>Sáng tạo nội dung · 14/10/2026 · Qua vòng CV</span></div><button class="button button--quiet" type="button">Review</button></div></li>
+                <li><div class="application-list-item" aria-current="true"><div><strong>CF-028 · Trần Bảo Ngọc</strong><br><span>Sáng tạo nội dung · 15/10/2026 · Chờ duyệt</span></div><button class="button button--quiet" type="button" disabled>Đang xem</button></div></li>
+                <li><div class="application-list-item"><div><strong>CF-029 · Lê Hoàng Thảo Vy</strong><br><span>Sản phẩm số · 16/10/2026 · Loại ở vòng CV</span></div><button class="button button--quiet" type="button">Review</button></div></li>
+                <li><div class="application-list-item"><div><strong>CF-030 · Phạm Quốc Bảo</strong><br><span>Sản phẩm số · 17/10/2026 · Qua vòng CV</span></div><button class="button button--quiet" type="button">Review</button></div></li>
+                <li><div class="application-list-item"><div><strong>CF-031 · Vũ Khánh Linh</strong><br><span>Sáng tạo nội dung · 18/10/2026 · Qua vòng CV</span></div><button class="button button--quiet" type="button">Review</button></div></li>
+              </ul>
+              <p class="field-hint">Đang xem 6 hồ sơ · Trang 1/2</p>
+            </section>
+
+            <article class="card" aria-labelledby="application-detail-title">
+              <div class="card-heading">
+                <h3 id="application-detail-title">CF-028 · Trần Bảo Ngọc</h3>
+                <span class="status-badge status-badge--pending">Chờ duyệt</span>
+              </div>
+              <div class="stack">
+                <p><strong>Vị trí:</strong> Sáng tạo nội dung · <strong>Thời gian nộp:</strong> 15/10/2026, 11:08</p>
+                <p><strong>CV:</strong> CV.pdf · tệp mẫu</p>
+                <div>
+                  <h3>Bài trình bày nguyện vọng · 182/300 từ</h3>
+                  <p>“Em yêu thích kể chuyện bằng nội dung ngắn và muốn giúp sinh viên hiểu rõ hơn về những dự án đang diễn ra trong trường. Em có thể lên ý tưởng, viết bản nháp và phối hợp cùng nhóm thiết kế để hoàn thiện bài đăng.”</p>
+                </div>
+                <aside class="note-private" aria-label="Ghi chú nội bộ chỉ Ban tuyển dụng nhìn thấy">
+                  <strong>Ghi chú nội bộ · chỉ Ban tuyển dụng</strong>
+                  Có kinh nghiệm viết bài cho dự án sinh viên; hỏi thêm về cách xác định nhóm độc giả chính.
+                </aside>
+          <div class="button-row" role="group" aria-label="Quyết định hồ sơ">
+                  <button class="button button--danger" type="button">Loại hồ sơ</button>
+                  <button class="button" type="button">Shortlist Candidate</button>
+                </div>
+                <p class="field-hint">Quyết định chỉ cập nhật CF-028. CF-026 và CF-027 của Nguyễn Minh Anh là hai hồ sơ riêng, mỗi hồ sơ có quyết định độc lập.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <div class="alert alert--info">
+          <p><strong>4 hồ sơ đã qua vòng CV.</strong> “Qua vòng CV” nghĩa là đủ điều kiện được xếp lịch, chưa phải kết quả tuyển cuối.</p>
+          <a class="button" href="scheduling.html">Tiếp tục tới Interview Scheduling →</a>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container">ClubFlow — PA#2 scaffold</div>
+      <div class="container">ClubFlow · PA#2 static prototype</div>
     </footer>
   </body>
 </html>

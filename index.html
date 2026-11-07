@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,26 +10,144 @@
     <header class="site-header">
       <div class="container">
         <p class="site-name">ClubFlow</p>
-        <nav aria-label="Primary navigation">
+        <nav aria-label="Điều hướng chính">
           <ul class="site-nav">
-            <li><a href="index.html" aria-current="page">Create campaign</a></li>
-            <li><a href="review.html">Application review</a></li>
-            <li><a href="scheduling.html">Interview scheduling</a></li>
+            <li><a href="index.html" aria-current="page">Chiến dịch</a></li>
+            <li><a href="review.html">Duyệt hồ sơ</a></li>
+            <li><a href="scheduling.html">Xếp lịch</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main class="container">
-      <h1>Create Recruitment Campaign</h1>
-      <section class="placeholder" aria-labelledby="implementation-status">
-        <h2 id="implementation-status">Implementation placeholder</h2>
-        <p>This screen is scaffolded only. The recruitment campaign interface will be implemented in the next project step.</p>
-      </section>
+      <div class="page-heading">
+        <div>
+          <p class="eyebrow">Bước 1 / 3 · Thiết lập chiến dịch</p>
+          <h1>Create Recruitment Campaign</h1>
+          <p>Chuẩn bị thông tin đợt tuyển của CLB Công nghệ &amp; Sáng tạo.</p>
+        </div>
+        <div class="button-row" role="group" aria-label="Thao tác chiến dịch">
+          <button class="button button--secondary" type="button">Lưu bản nháp</button>
+          <button class="button button--secondary" type="button">Xem trước</button>
+          <button class="button" type="button">Công bố chiến dịch</button>
+        </div>
+      </div>
+
+      <ol class="flow-steps" aria-label="Tiến trình tuyển thành viên">
+        <li class="flow-step" aria-current="step"><span class="flow-step-number">1</span> Tạo chiến dịch</li>
+        <li class="flow-step"><span class="flow-step-number">2</span> Duyệt hồ sơ</li>
+        <li class="flow-step"><span class="flow-step-number">3</span> Xếp lịch phỏng vấn</li>
+      </ol>
+
+      <div class="campaign-layout">
+        <div class="stack stack--roomy">
+          <section class="card" aria-labelledby="campaign-info-title">
+            <div class="card-heading">
+              <h2 id="campaign-info-title">Thông tin chiến dịch</h2>
+              <span class="status-badge status-badge--pending">Bản nháp</span>
+            </div>
+            <div class="stack">
+              <div class="field-grid">
+                <div class="field">
+                  <label for="campaign-name">Tên chiến dịch</label>
+                  <input id="campaign-name" name="campaign-name" value="Tuyển thành viên CLB 2026">
+                </div>
+                <div class="field">
+                  <label for="host-club">Câu lạc bộ chủ trì</label>
+                  <input id="host-club" name="host-club" value="CLB Công nghệ &amp; Sáng tạo">
+                </div>
+              </div>
+              <div class="field">
+                <label for="campaign-description">Mô tả chiến dịch</label>
+                <textarea id="campaign-description" name="campaign-description" rows="3">Tìm đồng đội cùng xây dựng sản phẩm hữu ích cho sinh viên.</textarea>
+              </div>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="opening-date">Ngày mở đơn</label>
+                  <input id="opening-date" name="opening-date" type="date" value="2026-10-12">
+                </div>
+                <div class="field">
+                  <label for="closing-date">Ngày đóng đơn</label>
+                  <input id="closing-date" name="closing-date" type="date" value="2026-10-30">
+                </div>
+              </div>
+              <div class="field">
+                <label for="application-instructions">Hướng dẫn ứng tuyển</label>
+                <textarea id="application-instructions" name="application-instructions" rows="3">Chọn vị trí phù hợp, chuẩn bị CV PDF tối đa 5 MB, viết bài trình bày nguyện vọng tối đa 300 từ và chọn các khung giờ phỏng vấn có thể tham gia.</textarea>
+              </div>
+            </div>
+          </section>
+
+          <section class="card" aria-labelledby="positions-title">
+            <div class="card-heading">
+              <h2 id="positions-title">Ban và vị trí tuyển</h2>
+              <button class="button button--secondary" type="button">+ Thêm vị trí</button>
+            </div>
+            <div class="stack">
+              <article class="position-card">
+                <div>
+                  <h3>Sản phẩm số</h3>
+                  <p class="position-meta">Ban Sản phẩm · 2 chỉ tiêu</p>
+                </div>
+                <div>
+                  <p><strong>Mô tả:</strong> Nghiên cứu và phác thảo luồng sản phẩm.</p>
+                  <p><strong>Yêu cầu:</strong> Biết dùng Figma, tư duy lấy người dùng làm trung tâm.</p>
+                </div>
+              </article>
+              <article class="position-card">
+                <div>
+                  <h3>Sáng tạo nội dung</h3>
+                  <p class="position-meta">Ban Truyền thông · 2 chỉ tiêu</p>
+                </div>
+                <div>
+                  <p><strong>Mô tả:</strong> Lên ý tưởng và viết nội dung cho các kênh của CLB.</p>
+                  <p><strong>Yêu cầu:</strong> Viết rõ ràng, có khả năng phối hợp nhóm.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <aside class="stack" aria-label="Cấu hình phỏng vấn">
+          <section class="card" aria-labelledby="interview-setup-title">
+            <h2 id="interview-setup-title">Chuẩn bị phỏng vấn</h2>
+            <div class="stack">
+              <div class="field">
+                <label for="interview-date">Ngày phỏng vấn</label>
+                <input id="interview-date" name="interview-date" type="date" value="2026-11-05">
+                <p class="field-hint">05/11/2026 · sau ngày đóng đơn 30/10/2026</p>
+              </div>
+              <div class="field">
+                <label for="interview-window">Khung giờ ứng viên chọn</label>
+                <select id="interview-window" name="interview-window">
+                  <option selected>09:00–12:00</option>
+                  <option>13:00–17:00</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="slot-duration">Thời lượng mỗi ca</label>
+                <select id="slot-duration" name="slot-duration">
+                  <option selected>15 phút</option>
+                  <option>20 phút</option>
+                  <option>30 phút</option>
+                </select>
+              </div>
+              <div class="alert alert--info">
+                Khung giờ phỏng vấn thuộc cùng một ngày và diễn ra sau khi đóng đơn.
+              </div>
+            </div>
+          </section>
+          <div class="action-row">
+            <a class="button button--secondary" href="review.html">Mở Application Review →</a>
+          </div>
+          <p class="field-hint">Hồ sơ mẫu được xem như đã nộp sau khi chiến dịch mở. Chuyển trang không tự tạo hoặc duyệt hồ sơ.</p>
+        </aside>
+      </div>
     </main>
 
     <footer class="site-footer">
-      <div class="container">ClubFlow — PA#2 scaffold</div>
+      <div class="container">ClubFlow · PA#2 static prototype</div>
     </footer>
   </body>
 </html>

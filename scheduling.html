@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,26 +10,177 @@
     <header class="site-header">
       <div class="container">
         <p class="site-name">ClubFlow</p>
-        <nav aria-label="Primary navigation">
+        <nav aria-label="Điều hướng chính">
           <ul class="site-nav">
-            <li><a href="index.html">Create campaign</a></li>
-            <li><a href="review.html">Application review</a></li>
-            <li><a href="scheduling.html" aria-current="page">Interview scheduling</a></li>
+            <li><a href="index.html">Chiến dịch</a></li>
+            <li><a href="review.html">Duyệt hồ sơ</a></li>
+            <li><a href="scheduling.html" aria-current="page">Xếp lịch</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main class="container">
-      <h1>Interview Scheduling</h1>
-      <section class="placeholder" aria-labelledby="implementation-status">
-        <h2 id="implementation-status">Implementation placeholder</h2>
-        <p>This screen is scaffolded only. The interview scheduling interface will be implemented in a later project step.</p>
-      </section>
+      <div class="page-heading">
+        <div>
+          <p class="eyebrow">Bước 3 / 3 · CLB Công nghệ &amp; Sáng tạo</p>
+          <h1>Interview Scheduling</h1>
+          <p>Lịch nháp cho 4 hồ sơ qua vòng CV · ngày phỏng vấn 05/11/2026.</p>
+        </div>
+        <a class="button button--secondary" href="review.html">← Về hồ sơ</a>
+      </div>
+
+      <ol class="flow-steps" aria-label="Tiến trình tuyển thành viên">
+        <li class="flow-step"><span class="flow-step-number">1</span> Tạo chiến dịch</li>
+        <li class="flow-step"><span class="flow-step-number">2</span> Duyệt hồ sơ</li>
+        <li class="flow-step" aria-current="step"><span class="flow-step-number">3</span> Xếp lịch phỏng vấn</li>
+      </ol>
+
+      <div class="stack stack--roomy">
+        <section class="card" aria-labelledby="schedule-settings-title">
+          <div class="card-heading">
+            <h2 id="schedule-settings-title">Cấu hình lịch nháp</h2>
+            <button class="button" type="button">Tạo lịch nháp</button>
+          </div>
+          <div class="field-grid">
+            <div class="field">
+              <label for="schedule-date">Ngày phỏng vấn</label>
+              <input id="schedule-date" name="schedule-date" type="date" value="2026-11-05">
+            </div>
+            <div class="field">
+              <label for="schedule-window">Khoảng giờ</label>
+              <select id="schedule-window" name="schedule-window"><option selected>09:00–12:00</option></select>
+            </div>
+            <div class="field">
+              <label for="schedule-duration">Thời lượng mỗi ca</label>
+              <select id="schedule-duration" name="schedule-duration">
+                <option selected>15 phút</option>
+                <option>20 phút</option>
+                <option>30 phút</option>
+              </select>
+            </div>
+            <div class="field">
+              <span class="field-label">Phòng có sẵn</span>
+              <p>A-201 · B-105</p>
+            </div>
+          </div>
+        </section>
+
+        <section aria-label="Tổng quan trạng thái lịch">
+          <div class="stats-grid">
+            <div class="stat-card"><span class="stat-value">4</span><span class="stat-label">Hồ sơ đủ điều kiện</span></div>
+            <div class="stat-card"><span class="stat-value">1</span><span class="stat-label">Proposed</span></div>
+            <div class="stat-card"><span class="stat-value">2</span><span class="stat-label">Conflict</span></div>
+            <div class="stat-card"><span class="stat-value">1</span><span class="stat-label">Unassigned</span></div>
+          </div>
+        </section>
+
+        <section class="card" aria-labelledby="availability-title">
+          <div class="card-heading">
+            <h2 id="availability-title">Người phỏng vấn và thời gian rảnh</h2>
+          </div>
+          <div class="field-grid">
+            <p><strong>Hà My · Sản phẩm số</strong><br>09:00–10:30</p>
+            <p><strong>Gia Huy · Sáng tạo nội dung</strong><br>09:00–11:00</p>
+            <p><strong>Ứng viên</strong><br>Khung giờ đã chọn khi nộp từng hồ sơ</p>
+            <p><strong>Phòng</strong><br>A-201 và B-105 · danh sách phòng có sẵn</p>
+          </div>
+        </section>
+
+        <section class="card" aria-labelledby="draft-table-title">
+          <div class="card-heading">
+            <div>
+              <h2 id="draft-table-title">Lịch nháp</h2>
+              <p>Trạng thái tính theo 4 hồ sơ qua vòng CV.</p>
+            </div>
+            <div class="button-row">
+              <button class="button button--secondary" type="button">Xuất lịch</button>
+              <button class="button button--secondary" type="button">Lưu thay đổi</button>
+            </div>
+          </div>
+          <div class="alert alert--error">
+            <strong>2 xung đột cần xử lý.</strong>
+            <p>CF-026 và CF-027 cùng ứng viên Nguyễn Minh Anh bị xếp vào 09:00–09:15. Đổi giờ một trong hai hồ sơ trước khi xác nhận.</p>
+          </div>
+          <div class="table-wrap" role="region" aria-label="Bảng lịch nháp, có thể cuộn ngang trên màn hình nhỏ" tabindex="0">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Hồ sơ / Ứng viên</th>
+                  <th scope="col">Vị trí</th>
+                  <th scope="col">Giờ</th>
+                  <th scope="col">Người phỏng vấn</th>
+                  <th scope="col">Phòng</th>
+                  <th scope="col">Trạng thái và lý do</th>
+                  <th scope="col">Thao tác</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>CF-026 · Nguyễn Minh Anh</td>
+                  <td>Sản phẩm số</td>
+                  <td>09:00–09:15</td>
+                  <td>Hà My</td>
+                  <td>A-201</td>
+                  <td><span class="status-badge status-badge--conflict">Conflict</span><br>Cùng ứng viên với CF-027</td>
+                  <td><button class="button button--secondary" type="button">Sửa</button></td>
+                </tr>
+                <tr>
+                  <td>CF-027 · Nguyễn Minh Anh</td>
+                  <td>Sáng tạo nội dung</td>
+                  <td>09:00–09:15</td>
+                  <td>Gia Huy</td>
+                  <td>B-105</td>
+                  <td><span class="status-badge status-badge--conflict">Conflict</span><br>Cùng ứng viên với CF-026</td>
+                  <td><button class="button button--secondary" type="button">Giải quyết</button></td>
+                </tr>
+                <tr>
+                  <td>CF-030 · Phạm Quốc Bảo</td>
+                  <td>Sản phẩm số</td>
+                  <td>09:15–09:30</td>
+                  <td>Hà My</td>
+                  <td>A-201</td>
+                  <td><span class="status-badge status-badge--proposed">Proposed</span></td>
+                  <td><button class="button button--secondary" type="button">Sửa</button></td>
+                </tr>
+                <tr>
+                  <td>CF-031 · Vũ Khánh Linh</td>
+                  <td>Sáng tạo nội dung</td>
+                  <td>Chưa xếp</td>
+                  <td>Gia Huy</td>
+                  <td>Chưa xếp</td>
+                  <td><span class="status-badge status-badge--unassigned">Unassigned</span><br>Không có phòng trống trong khung giờ chung</td>
+                  <td><button class="button button--secondary" type="button">+ Gán khung giờ</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="action-row">
+            <button class="button button--secondary" type="button">Sửa phân công</button>
+            <button class="button button--secondary" type="button">+ Gán khung giờ</button>
+          </div>
+        </section>
+
+        <section class="card" aria-labelledby="confirmation-title">
+          <div class="card-heading">
+            <h2 id="confirmation-title">Điều kiện xác nhận</h2>
+            <span class="status-badge status-badge--conflict">Chưa thể xác nhận</span>
+          </div>
+          <ul>
+            <li>Đã đóng đơn ngày 30/10/2026.</li>
+            <li>Tất cả hồ sơ đã được duyệt.</li>
+            <li>Còn 2 xung đột và 1 hồ sơ chưa xếp.</li>
+          </ul>
+          <div class="action-row">
+            <button class="button" type="button" disabled>Duyệt &amp; xác nhận lịch</button>
+            <p class="field-hint">Xác nhận lịch không công bố kết quả tuyển dụng.</p>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="site-footer">
-      <div class="container">ClubFlow — PA#2 scaffold</div>
+      <div class="container">ClubFlow · PA#2 static prototype</div>
     </footer>
   </body>
 </html>

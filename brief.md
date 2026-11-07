@@ -286,3 +286,27 @@ Report:
 - Remaining decisions for the two developers.
 - Whether the repository is ready for them to start.
 ```
+
+## Prompt 4 — 2026-11-08
+
+```text
+Mở figma, sử dụng prompt này và các ngữ cảnh cần thiết cho Figma agent tạo 3 wireframe
+```
+
+## Prompt 5 — 2026-11-08
+
+```text
+use superdesign plugins - complete  assets/css/styles.css: colour, font, spacing, component và responsive use together in the project.
+```
+
+## Prompt 6 — 2026-11-08
+
+```text
+Tiêu chí Hoàn thành khi
+
+- Đúng brief, semantic HTML; chạy khi tắt JS; đạt responsive 360/768/1280.
+- Có 3 screenshot thực tế và kết quả W3C 0 lỗi.
+- Cập nhật prompt, AI-log; commit gửi PR
+
+Bạn hãy giúp tôi chạy, không dừng, sai thì quay lại sửa.
+```
