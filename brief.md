@@ -609,3 +609,198 @@ Return:
 
 Stop after reporting.
 ```
+
+## Prompt 11 — 2026-11-08
+
+```text
+# ClubFlow PA#2 — Phase 3: Validation, Documentation & Submission Evidence
+
+## Objective
+
+Complete Phase 3 for the ClubFlow PA#2 responsive prototype.
+
+Phase 1 (approved wireframes) and Phase 2 (responsive prototype) are completed.
+
+Work on the existing branch: `feat/pa2-finalize`.
+
+Read `AGENTS.md`, the ClubFlow project brief, the PA#2 rubric, and all current repository documents before making changes.
+
+Do not redesign or add features to the existing prototype.
+
+## Task 1 — W3C HTML Validation
+
+Validate:
+- index.html
+- review.html
+- scheduling.html
+
+Use the official W3C Nu validator (https://validator.w3.org/nu/) with File Upload for static HTML.
+
+Requirements:
+- Zero HTML errors for each page.
+- Warnings are permitted.
+- Save genuine validation results in:
+  - checks/validator-index.png or .txt
+  - checks/validator-review.png or .txt
+  - checks/validator-scheduling.png or .txt
+
+If HTML errors are detected:
+1. Identify the exact line and explanation.
+2. Apply only the minimal correction.
+3. Rerun validation and browser regression tests.
+
+If the official validator is unavailable or blocked, report NOT VERIFIED. Do not fabricate results or reuse stale evidence.
+
+## Task 2 — Generate Responsive Screenshots
+
+Use browser automation with JavaScript disabled.
+
+Capture each page at exactly:
+- 360px
+- 768px
+- 1280px
+
+Save full-page screenshots:
+
+screenshots/
+- index-360.png
+- index-768.png
+- index-1280.png
+- review-360.png
+- review-768.png
+- review-1280.png
+- scheduling-360.png
+- scheduling-768.png
+- scheduling-1280.png
+
+Requirements:
+- Capture the entire document, including footer.
+- Preserve the exact requested viewport widths.
+- Use the final Phase 2 source.
+- Check each image visually.
+- No horizontal page overflow.
+- No clipped or overlapping content.
+- Long names wrap correctly.
+- Tables scroll within their own containers.
+- No blank pages or missing assets.
+- All screenshots represent the same final implementation.
+
+Do not merely generate the images; inspect each one.
+
+## Task 3 — Finalize PROTOTYPE.md
+
+Ensure it contains all six rubric-required sections:
+
+1. Team — full names and student IDs.
+2. How to open the prototype.
+3. Screens — pages, purpose, and navigation links.
+4. Design choices and rationale.
+5. Not wired yet.
+6. CSS framework, spacing scale, and breakpoints.
+
+Use English.
+
+Do not invent team member identities or student IDs. Report missing information explicitly.
+
+Keep explanations consistent with the actual static HTML/CSS implementation.
+
+## Task 4 — Review brief.md and AI-LOG.md
+
+Verify:
+- All actual Codex prompts are recorded in chronological order.
+- The AI log describes real implementation work.
+- Changed and Rejected entries are specific.
+- Previous bugs, fixes, and validation attempts are recorded honestly.
+- No fabricated manual verification or W3C results.
+- Git history and documentation are consistent.
+
+Add a Phase 3 AI-LOG entry documenting the actual checks and changes.
+
+Do not rewrite historical entries unnecessarily.
+
+## Task 5 — Complete SELF_ASSESSMENT_REPORT.md
+
+Evaluate the seven official rubric criteria:
+
+1. Three linked screens — 20 points.
+2. Responsive layout — 25 points.
+3. Semantic and valid HTML — 20 points.
+4. Verifiable design — 10 points.
+5. Brief and rules file — 10 points.
+6. AI-LOG.md — 10 points.
+7. Commit history — 5 points.
+
+For each criterion:
+- Assign a realistic score.
+- Cite actual files, screenshots, checks, or commits.
+- Explain any deductions.
+
+Include:
+- Team member information.
+- Total claimed score out of 100.
+- What we did not manage.
+- What we would do differently.
+
+Use English.
+
+Do not claim points without evidence or assume unverified checks passed.
+
+## Task 6 — Final Repository Audit
+
+Verify:
+- All three HTML pages and CSS.
+- Fictional CV PDF exists and opens correctly.
+- All required relative links.
+- All nine responsive screenshots.
+- All three W3C validation results.
+- PROTOTYPE.md.
+- brief.md.
+- AI-LOG.md.
+- SELF_ASSESSMENT_REPORT.md.
+- Project rules file.
+- Git history.
+
+Check that screenshots and validation evidence match the current source.
+
+Review final compliance against the entire PA#2 rubric.
+
+## Task 7 — Submission Readiness
+
+Check the required submission ZIP structure, including the hidden .git directory and excluding node_modules.
+
+Determine the correct ZIP filename using the team's student IDs in ascending order and the claimed total score.
+
+Do not create the submission ZIP yet.
+
+## Final Report
+
+Provide:
+1. Files created or modified.
+2. W3C validation status for every page.
+3. Screenshot verification matrix (9 cases).
+4. Documentation completeness.
+5. Updated rubric estimate out of 100.
+6. Remaining issues and their severity.
+7. Final submission checklist.
+8. Readiness verdict.
+
+Choose one:
+- READY FOR FINAL REVIEW
+- READY WITH MINOR ISSUES
+- NOT READY — FIX REQUIRED
+- INCOMPLETE — VERIFICATION REQUIRED
+
+## Restrictions
+
+- Stay on the current branch.
+- Do not create another branch.
+- Do not commit or push.
+- Do not merge or rebase.
+- Do not install dependencies without approval.
+- Do not change the approved design without a verified reason.
+- Do not fabricate validation results.
+- Do not create the final ZIP yet.
+- Preserve unrelated changes.
+
+Complete the requested Phase 3 work, show the final Git diff and status, then STOP for my review before committing.
+```

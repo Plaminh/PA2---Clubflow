@@ -2,9 +2,12 @@
 
 ## 1. Team
 
-- TODO — Full name — Student ID
-- TODO — Full name — Student ID
-- TODO — Full name — Student ID
+| Full name | Student ID |
+| --- | --- |
+| Phan Lê Anh Minh | 24127082 |
+| Hồ Phan Như Nguyệt | 24127211 |
+| Huỳnh Thái Hoàng | 24127171 |
+
 
 ## 2. How to open it
 

@@ -9,11 +9,11 @@ The five course sources in `docs/requirements/` control this checklist. Check an
 - [x] Read `docs/requirements/PA2-rubric-responsive-prototype.pdf`.
 - [x] Read `docs/requirements/AI-LOG.md` as the course AI-log template.
 - [x] Read `docs/requirements/SELF_ASSESSMENT_REPORT template.pdf` as the course self-assessment template.
-- [ ] Keep the selected implementation stack: static HTML5 and plain CSS, with no build step or new dependency.
-- [ ] Keep the prototype to one club, one active campaign, and one interview date for the campaign.
-- [ ] Use the Executive main flow in this order: Create Recruitment Campaign → Application Review → Interview Scheduling.
-- [ ] Keep all three screens tied to the same campaign and use coherent, realistic ClubFlow placeholder data rather than lorem ipsum.
-- [ ] Include at least one deliberately long item, such as a long Vietnamese name or title, to test wrapping.
+- [x] Keep the selected implementation stack: static HTML5 and plain CSS, with no build step or new dependency.
+- [x] Keep the prototype to one club, one active campaign, and one interview date for the campaign.
+- [x] Use the Executive main flow in this order: Create Recruitment Campaign → Application Review → Interview Scheduling.
+- [x] Keep all three screens tied to the same campaign and use coherent, realistic ClubFlow placeholder data rather than lorem ipsum.
+- [x] Include at least one deliberately long item, such as a long Vietnamese name or title, to test wrapping.
 
 ## Screen 1 — Create Recruitment Campaign (`index.html`)
 
@@ -92,11 +92,11 @@ The five course sources in `docs/requirements/` control this checklist. Check an
 - [x] Check every page at 1280 px.
 - [x] At each width, confirm `document.documentElement.clientWidth` equals the selected viewport width.
 - [x] At each width, confirm `document.documentElement.scrollWidth > document.documentElement.clientWidth` returns `false`.
-- [ ] At each width, confirm the rubric's protruding-element query returns `[]`, except content intentionally contained by a table's own scrolling wrapper.
-- [ ] Confirm nothing is cut off, clipped, or overlapping and long content wraps.
-- [ ] Do not use `overflow-x: hidden` to conceal a layout defect.
+- [x] At each width, confirm the rubric's protruding-element query returns `[]`, except content intentionally contained by a table's own scrolling wrapper.
+- [x] Confirm nothing is cut off, clipped, or overlapping and long content wraps.
+- [x] Do not use `overflow-x: hidden` to conceal a layout defect.
 - [x] At 360 px, confirm standalone buttons and links are at least 44 px tall.
-- [ ] Confirm each layout changes appropriately between phone and laptop rather than stretching one narrow column.
+- [x] Confirm each layout changes appropriately between phone and laptop rather than stretching one narrow column.
 
 ## Semantic HTML, accessibility, and design checks
 
@@ -104,7 +104,7 @@ The five course sources in `docs/requirements/` control this checklist. Check an
 - [x] Give every page exactly one `h1` and no skipped heading level.
 - [x] Use buttons for actions and anchors/form submissions for navigation.
 - [x] Give every input a visible associated label whose text activates the control.
-- [ ] Give every image an appropriate `alt` value.
+- [x] Give every image an appropriate `alt` value (the implementation pages contain no content images).
 - [ ] Check the final heading outline and semantics in the browser Accessibility pane.
 - [x] Run the W3C checker on `index.html`, achieve zero errors, and save the actual result.
 - [x] Run the W3C checker on `review.html`, achieve zero errors, and save the actual result.
@@ -135,21 +135,21 @@ The five course sources in `docs/requirements/` control this checklist. Check an
 
 ## Required English documents and honest evidence
 
-- [ ] Complete `PROTOTYPE.md` with Team, How to open it, Screens, Your design choices, Not wired yet, and CSS sections.
+- [x] Complete `PROTOTYPE.md` with Team, How to open it, Screens, Your design choices, Not wired yet, and CSS sections; the Team section explicitly reports the unavailable roster.
 - [ ] In `PROTOTYPE.md`, list every member's full name/student ID, each page and destination, the selected plain-CSS approach, spacing scale, breakpoints, and network requirement.
-- [ ] Keep `brief.md` as the actual prompts in chronological order, not a reconstructed summary.
-- [ ] Keep one timely, factual root `AI-LOG.md` entry per assistant task/page, using Tool, Asked for, Kept, Changed, Rejected, and By hand.
-- [ ] Record actual failed checks and corrections in `AI-LOG.md` when they occur; do not invent a failure to improve the log.
-- [ ] Complete `SELF_ASSESSMENT_REPORT.md` criterion by criterion with evidence pointing to real files, screenshots, checks, or commits.
-- [ ] Include honest “What we did not manage” and “What we would do differently” sections.
-- [ ] Make the self-assessment total equal the total in the submission ZIP filename.
+- [x] Keep `brief.md` as the actual prompts in chronological order, not a reconstructed summary.
+- [x] Keep one timely, factual root `AI-LOG.md` entry per assistant task/page, using Tool, Asked for, Kept, Changed, Rejected, and By hand.
+- [x] Record actual failed checks and corrections in `AI-LOG.md` when they occur; do not invent a failure to improve the log.
+- [x] Complete `SELF_ASSESSMENT_REPORT.md` criterion by criterion with evidence pointing to real files, screenshots, checks, or commits.
+- [x] Include honest “What we did not manage” and “What we would do differently” sections.
+- [ ] Make the self-assessment total equal the total in the submission ZIP filename (ZIP not created; team IDs unavailable).
 
 ## Git history, packaging, and submission
 
-- [ ] Preserve the initial rules/scaffold commit.
+- [x] Preserve the initial rules/scaffold commit.
 - [ ] Create at least one focused implementation commit per screen, under the author identity of the member who did the work.
 - [ ] Create a responsive-pass commit after actual multi-width work.
-- [ ] Ensure the final ZIP contains the hidden `.git` directory and excludes `node_modules`.
+- [ ] Ensure the final ZIP contains the hidden `.git` directory and excludes `node_modules` (repository structure checked; ZIP intentionally not created yet).
 - [ ] Name the ZIP `<StudentID1>-<StudentID2>-<StudentID3>_<total>.zip`, with student IDs in ascending order.
 - [ ] Submit from the team member's `@student.hcmus.edu.vn` Google account.
 - [ ] If team membership changed from PA#1, tell the lecturer before implementation.
