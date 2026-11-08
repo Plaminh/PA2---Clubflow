@@ -310,3 +310,69 @@ Tiêu chí Hoàn thành khi
 
 Bạn hãy giúp tôi chạy, không dừng, sai thì quay lại sửa.
 ```
+
+## Prompt 7 — 2026-11-08
+
+```text
+Execute Phase 1 only: register the approved ClubFlow PA2 wireframes.
+
+1. Inspect
+
+- Read AGENTS.md.
+- Check the current branch, git status and existing docs/design/.
+- Preserve existing work, commits and Git identity.
+- Work on feat/pa2-finalize.
+- If it does not exist, create it from local main when the working tree is clean.
+- If switching would affect uncommitted work, report the situation without stashing, resetting or discarding anything.
+
+2. Add the actual approved images
+   Locate the three supplied Final PNGs and copy them into:
+   docs/design/01-Create-Recruitment-Campaign-Final.png
+   docs/design/02-Application-Review-Final.png
+   docs/design/03-Interview-Scheduling-Final.png
+
+- Keep the image contents unchanged; filenames may be normalized.
+- Do not regenerate, crop, edit or replace them with older versions.
+- Compare existing destination files before replacing anything.
+- If the intended originals cannot be identified, report which are missing or ambiguous. Do not invent placeholders or search unrelated personal folders.
+
+3. Document their purpose
+   Create or update docs/design/README.md in English:
+
+- Link each image and map it to index.html, review\.html or scheduling.html.
+- Explain these are approved visual references, not submission screenshots.
+- Implementation may adapt the layout for responsive and semantic HTML.
+- Course requirements take priority over image omissions.
+- Alternate-state panels are illustrative; no backend or dynamic business logic is required for this static PA2 prototype.
+- Record this wording correction for later implementation:
+  Replace “Regenerating replaces the current draft after confirmation.”
+  with “You will be asked before replacing the current draft.”
+- Mark implementation alignment as pending.
+
+4. Record the actual work
+
+- Append this prompt verbatim to brief.md.
+- Add an honest Phase 1 entry to AI-LOG.md.
+- Do not claim manual user review, browser tests, W3C checks or implementation alignment unless actually established.
+
+5. Verify
+
+- All three destination PNGs exist, open correctly and match their source bytes.
+- Documentation links resolve.
+- These files are not Git-ignored.
+- HTML, CSS and existing screenshots/checks remain unchanged.
+- Inspect the final diff and staged paths.
+
+If all three approved images are available and verification passes, commit only Phase 1 changes:
+docs: add approved ClubFlow wireframes
+
+Do not push, merge or start Phase 2.
+
+Report:
+
+- Current branch.
+- Files added/updated.
+- Verification actually performed.
+- Missing files or unresolved issues.
+- Commit hash and final Git status.
+```

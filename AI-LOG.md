@@ -88,3 +88,19 @@ By hand: Reviewed the project brief/rubric requirements already documented in th
 Contrast: Calculated WCAG relative-luminance ratios for the palette and button combinations: muted text on page 7.04:1; body text on white 16.40:1; brand link on white 7.92:1; white on the primary deep-blue button 12.37:1; warning/status pairs at least 7.66:1. These exceed 4.5:1.
 
 Checks: Posted `index.html`, `review.html`, and `scheduling.html` to W3C Nu; each returned zero errors and zero warnings, saved under `checks/validator-*.txt`. W3C CSS Validator multipart upload returned HTTP 200, zero errors, and one informational warning that CSS variables are not statically checked; the vendor-extension warning was removed before the final validation. The clean result summary is saved as `checks/validator-css.txt`. Captured full-page Chrome screenshots at 360, 768, and 1280 px for all three pages with JavaScript disabled. All nine rendered pages reported one `h1`, no script elements, no page errors, 16 px body text, and no document-level horizontal overflow; standalone links/buttons met the 44 px minimum. The scheduling table scrolls inside its own wrapper at 360 and 768 px and fits at 1280 px. A first 768 px campaign capture exposed a cramped two-column layout; moved that breakpoint to 1280 px and recaptured.
+
+## 2026-11-08 — Phase 1: Register the approved ClubFlow PA#2 wireframes
+
+Tool: OpenAI Codex.
+
+Asked for: Execute Phase 1 only by registering the three supplied approved Final PNG wireframes on `feat/pa2-finalize`, documenting their purpose and later wording correction, recording the actual prompt and AI work, verifying the result, and committing only those changes.
+
+Kept: The three supplied PNG files byte-for-byte, their approved Final filenames, the existing repository history, current Git identity, static HTML/plain-CSS implementation, screenshots, checks, and all unrelated work.
+
+Changed: Copied the three source PNGs from the repository root into `docs/design/`; added an English design README that maps them to the three implementation pages, distinguishes them from submission screenshots, records the requested future wording correction, and marks implementation alignment as pending; appended the actual prompt to `brief.md`.
+
+Rejected: No images were regenerated, cropped, edited, substituted, or taken from unrelated locations. No HTML/CSS alignment work, backend behavior, Phase 2 work, browser testing, or W3C validation was performed.
+
+By hand: No manual user review or team-authored implementation contribution was claimed for this phase.
+
+Checks: Opened all three supplied source PNGs for visual identification; compared SHA-256 hashes and byte lengths between each source and destination; checked the README image links resolve; checked the design files are not Git-ignored; confirmed tracked HTML, CSS, existing screenshots, and existing checks have no diff; and inspected the final Phase 1 diff and staged paths before committing.
