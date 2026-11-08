@@ -2,9 +2,12 @@
 
 ## 1. Team
 
-- TODO — Full name — Student ID
-- TODO — Full name — Student ID
-- TODO — Full name — Student ID
+| Full name | Student ID |
+| --- | --- |
+| Phan Lê Anh Minh | 24127082 |
+| Hồ Phan Như Nguyệt | 24127211 |
+| Huỳnh Thái Hoàng | 24127171 |
+
 
 ## 2. How to open it
 
@@ -25,13 +28,12 @@ Open `index.html` directly in a browser. The prototype uses local static HTML an
 - Application review keeps the selected details beside the list; the mobile layout stacks the sections.
 - Scheduling shows a real same-applicant overlap and an Unassigned reason. The visible totals match the four shortlisted sample records.
 - A restrained neutral palette, deep-blue actions, and reusable cards, fields, status labels, and table styles create a consistent administration interface.
-- The three pages are static representations. Buttons do not persist changes or execute search, export, scheduling, or approval behavior.
 
 ## 5. Not wired yet
 
-- Campaign draft saving, preview, publication, and form validation.
-- Live application search/filter/sort/pagination, CSV export, CV opening, and application decision updates.
-- Schedule generation, assignment edits, conflict recalculation, schedule export, and confirmation/read-only behavior.
+- Campaign draft saving, preview, publication, and form validation. The visible invalid and published panels are labelled static state examples; navigation does not create, approve, or persist application records.
+- Live application search/filter/sort/pagination, CSV export, closing the detail panel, note saving, and application decision updates. The CF-026 fictional sample CV is the one wired local document link on this screen.
+- Schedule generation, assignment edits, conflict recalculation, schedule export, and confirmation/read-only behavior. The confirmed panel is a labelled alternate-state example.
 - Authentication, data persistence, back-end behavior, and actions outside the three PA#2 screens.
 
 ## 6. CSS

@@ -30,6 +30,8 @@
         <a class="button button--secondary" href="review.html">← Về hồ sơ</a>
       </div>
 
+      <p class="campaign-context"><strong>Chiến dịch:</strong> Tuyển Thành Viên Câu Lạc Bộ Công Nghệ &amp; Sáng Tạo — Đợt Tuyển Chính Thức Học Kỳ 1, Năm Học 2026–2027, Dành Cho Sinh Viên Các Khoa Công Nghệ Thông Tin, Thiết Kế Và Truyền Thông</p>
+
       <ol class="flow-steps" aria-label="Tiến trình tuyển thành viên">
         <li class="flow-step"><span class="flow-step-number">1</span> Tạo chiến dịch</li>
         <li class="flow-step"><span class="flow-step-number">2</span> Duyệt hồ sơ</li>
@@ -42,14 +44,16 @@
             <h2 id="schedule-settings-title">Cấu hình lịch nháp</h2>
             <button class="button" type="button">Tạo lịch nháp</button>
           </div>
-          <div class="field-grid">
+          <div class="schedule-settings-grid">
             <div class="field">
               <label for="schedule-date">Ngày phỏng vấn</label>
               <input id="schedule-date" name="schedule-date" type="date" value="2026-11-05">
             </div>
             <div class="field">
               <label for="schedule-window">Khoảng giờ</label>
-              <select id="schedule-window" name="schedule-window"><option selected>09:00–12:00</option></select>
+              <select id="schedule-window" name="schedule-window">
+                <option selected>09:00–12:00</option>
+              </select>
             </div>
             <div class="field">
               <label for="schedule-duration">Thời lượng mỗi ca</label>
@@ -59,48 +63,72 @@
                 <option>30 phút</option>
               </select>
             </div>
-            <div class="field">
-              <span class="field-label">Phòng có sẵn</span>
-              <p>A-201 · B-105</p>
-            </div>
+            <fieldset class="choice-group">
+              <legend>Phòng có sẵn</legend>
+              <div class="choice-options">
+                <label><input type="checkbox" name="rooms" value="A-201" checked> A-201</label>
+                <label><input type="checkbox" name="rooms" value="B-105" checked> B-105</label>
+              </div>
+            </fieldset>
           </div>
+          <p class="field-hint">You will be asked before replacing the current draft.</p>
         </section>
 
         <section aria-label="Tổng quan trạng thái lịch">
           <div class="stats-grid">
-            <div class="stat-card"><span class="stat-value">4</span><span class="stat-label">Hồ sơ đủ điều kiện</span></div>
-            <div class="stat-card"><span class="stat-value">1</span><span class="stat-label">Proposed</span></div>
-            <div class="stat-card"><span class="stat-value">2</span><span class="stat-label">Conflict</span></div>
-            <div class="stat-card"><span class="stat-value">1</span><span class="stat-label">Unassigned</span></div>
+            <div class="stat-card">
+              <span class="stat-value">4</span>
+              <span class="stat-label">Hồ sơ đủ điều kiện</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value">1</span>
+              <span class="stat-label">Proposed</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value">2</span>
+              <span class="stat-label">Conflict</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value">1</span>
+              <span class="stat-label">Unassigned</span>
+            </div>
           </div>
         </section>
 
         <section class="card" aria-labelledby="availability-title">
           <div class="card-heading">
-            <h2 id="availability-title">Người phỏng vấn và thời gian rảnh</h2>
+            <h2 id="availability-title">Phân công người phỏng vấn</h2>
           </div>
-          <div class="field-grid">
-            <p><strong>Hà My · Sản phẩm số</strong><br>09:00–10:30</p>
-            <p><strong>Gia Huy · Sáng tạo nội dung</strong><br>09:00–11:00</p>
-            <p><strong>Ứng viên</strong><br>Khung giờ đã chọn khi nộp từng hồ sơ</p>
-            <p><strong>Phòng</strong><br>A-201 và B-105 · danh sách phòng có sẵn</p>
+          <div class="assignment-grid">
+            <article class="assignment-card">
+              <h3>Hà My</h3>
+              <p><strong>Position:</strong> User Experience Design</p>
+              <p><strong>Thời gian rảnh:</strong> 09:00–10:30</p>
+            </article>
+            <article class="assignment-card">
+              <h3>Gia Huy</h3>
+              <p><strong>Position:</strong> Content Creation</p>
+              <p><strong>Thời gian rảnh:</strong> 09:00–11:00</p>
+            </article>
           </div>
+          <p class="field-hint">Hà My và Gia Huy là người phỏng vấn; họ không xuất hiện trong danh sách ứng viên.</p>
         </section>
 
         <section class="card" aria-labelledby="draft-table-title">
           <div class="card-heading">
             <div>
               <h2 id="draft-table-title">Lịch nháp</h2>
-              <p>Trạng thái tính theo 4 hồ sơ qua vòng CV.</p>
+              <p>Trạng thái tính theo đúng 4 hồ sơ đã qua vòng CV.</p>
             </div>
             <div class="button-row">
-              <button class="button button--secondary" type="button">Xuất lịch</button>
               <button class="button button--secondary" type="button">Lưu thay đổi</button>
+              <button class="button button--secondary" type="button">Xuất lịch</button>
             </div>
           </div>
+
           <div class="alert alert--error">
-            <strong>2 xung đột cần xử lý.</strong>
-            <p>CF-026 và CF-027 cùng ứng viên Nguyễn Minh Anh bị xếp vào 09:00–09:15. Đổi giờ một trong hai hồ sơ trước khi xác nhận.</p>
+            <strong>2 bản ghi Conflict cần xử lý</strong>
+            <p>CF-026 và CF-027 thuộc cùng ứng viên Nguyễn Minh Anh và đều được xếp vào 09:00–09:15. Hai buổi này chồng lấn dù dùng người phỏng vấn và phòng khác nhau.</p>
           </div>
           <div class="table-wrap" role="region" aria-label="Bảng lịch nháp, có thể cuộn ngang trên màn hình nhỏ" tabindex="0">
             <table>
@@ -108,7 +136,8 @@
                 <tr>
                   <th scope="col">Hồ sơ / Ứng viên</th>
                   <th scope="col">Vị trí</th>
-                  <th scope="col">Giờ</th>
+                  <th scope="col">Giờ rảnh ứng viên</th>
+                  <th scope="col">Giờ phỏng vấn</th>
                   <th scope="col">Người phỏng vấn</th>
                   <th scope="col">Phòng</th>
                   <th scope="col">Trạng thái và lý do</th>
@@ -118,38 +147,42 @@
               <tbody>
                 <tr>
                   <td>CF-026 · Nguyễn Minh Anh</td>
-                  <td>Sản phẩm số</td>
+                  <td>User Experience Design</td>
+                  <td>09:00–10:00</td>
                   <td>09:00–09:15</td>
                   <td>Hà My</td>
                   <td>A-201</td>
-                  <td><span class="status-badge status-badge--conflict">Conflict</span><br>Cùng ứng viên với CF-027</td>
+                  <td><span class="status-badge status-badge--conflict">Conflict</span><br>Chồng giờ với CF-027 của cùng ứng viên</td>
                   <td><button class="button button--secondary" type="button">Sửa</button></td>
                 </tr>
                 <tr>
                   <td>CF-027 · Nguyễn Minh Anh</td>
-                  <td>Sáng tạo nội dung</td>
+                  <td>Content Creation</td>
+                  <td>09:00–10:00</td>
                   <td>09:00–09:15</td>
                   <td>Gia Huy</td>
                   <td>B-105</td>
-                  <td><span class="status-badge status-badge--conflict">Conflict</span><br>Cùng ứng viên với CF-026</td>
+                  <td><span class="status-badge status-badge--conflict">Conflict</span><br>Chồng giờ với CF-026 của cùng ứng viên</td>
                   <td><button class="button button--secondary" type="button">Giải quyết</button></td>
                 </tr>
                 <tr>
                   <td>CF-030 · Phạm Quốc Bảo</td>
-                  <td>Sản phẩm số</td>
+                  <td>User Experience Design</td>
+                  <td>09:00–10:30</td>
                   <td>09:15–09:30</td>
                   <td>Hà My</td>
                   <td>A-201</td>
-                  <td><span class="status-badge status-badge--proposed">Proposed</span></td>
+                  <td><span class="status-badge status-badge--proposed">Proposed</span><br>Phù hợp giờ rảnh, người phỏng vấn và phòng</td>
                   <td><button class="button button--secondary" type="button">Sửa</button></td>
                 </tr>
                 <tr>
                   <td>CF-031 · Vũ Khánh Linh</td>
-                  <td>Sáng tạo nội dung</td>
+                  <td>Content Creation</td>
+                  <td>09:00–09:15</td>
                   <td>Chưa xếp</td>
                   <td>Gia Huy</td>
                   <td>Chưa xếp</td>
-                  <td><span class="status-badge status-badge--unassigned">Unassigned</span><br>Không có phòng trống trong khung giờ chung</td>
+                  <td><span class="status-badge status-badge--unassigned">Unassigned</span><br>Gia Huy và cả hai phòng đang bận trong khung giờ chung duy nhất</td>
                   <td><button class="button button--secondary" type="button">+ Gán khung giờ</button></td>
                 </tr>
               </tbody>
@@ -157,6 +190,7 @@
           </div>
           <div class="action-row">
             <button class="button button--secondary" type="button">Sửa phân công</button>
+            <button class="button button--secondary" type="button">Giải quyết xung đột</button>
             <button class="button button--secondary" type="button">+ Gán khung giờ</button>
           </div>
         </section>
@@ -166,16 +200,86 @@
             <h2 id="confirmation-title">Điều kiện xác nhận</h2>
             <span class="status-badge status-badge--conflict">Chưa thể xác nhận</span>
           </div>
-          <ul>
-            <li>Đã đóng đơn ngày 30/10/2026.</li>
-            <li>Tất cả hồ sơ đã được duyệt.</li>
-            <li>Còn 2 xung đột và 1 hồ sơ chưa xếp.</li>
+          <ul class="requirement-list">
+            <li class="requirement-met">Đã đóng đơn ngày 30/10/2026.</li>
+            <li class="requirement-failed">CF-028 · Trần Bảo Ngọc vẫn đang chờ duyệt.</li>
+            <li class="requirement-failed">Còn 2 bản ghi Conflict.</li>
+            <li class="requirement-failed">CF-031 vẫn Unassigned.</li>
           </ul>
           <div class="action-row">
             <button class="button" type="button" disabled>Duyệt &amp; xác nhận lịch</button>
             <p class="field-hint">Xác nhận lịch không công bố kết quả tuyển dụng.</p>
           </div>
         </section>
+
+        <details class="state-example" open>
+          <summary>Ví dụ trạng thái thay thế: lịch đã xác nhận và chỉ đọc</summary>
+          <div class="state-example-body">
+            <div class="card-heading">
+              <h2>Lịch Confirmed</h2>
+              <span class="status-badge status-badge--confirmed">Confirmed · chỉ đọc</span>
+            </div>
+            <div class="alert alert--warning">
+              <p><strong>CF-028 đã bị loại ở vòng CV trước ví dụ này.</strong> Vì vậy lịch xác nhận vẫn chỉ có bốn hồ sơ CF-026, CF-027, CF-030 và CF-031.</p>
+            </div>
+            <div class="table-wrap" role="region" aria-label="Ví dụ bảng lịch đã xác nhận, có thể cuộn ngang trên màn hình nhỏ" tabindex="0">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Hồ sơ / Ứng viên</th>
+                    <th scope="col">Vị trí</th>
+                    <th scope="col">Giờ</th>
+                    <th scope="col">Người phỏng vấn</th>
+                    <th scope="col">Phòng</th>
+                    <th scope="col">Trạng thái</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>CF-026 · Nguyễn Minh Anh</td>
+                    <td>User Experience Design</td>
+                    <td>09:00–09:15</td>
+                    <td>Hà My</td>
+                    <td>A-201</td>
+                    <td><span class="status-badge status-badge--confirmed">Confirmed</span></td>
+                  </tr>
+                  <tr>
+                    <td>CF-027 · Nguyễn Minh Anh</td>
+                    <td>Content Creation</td>
+                    <td>09:15–09:30</td>
+                    <td>Gia Huy</td>
+                    <td>B-105</td>
+                    <td><span class="status-badge status-badge--confirmed">Confirmed</span></td>
+                  </tr>
+                  <tr>
+                    <td>CF-030 · Phạm Quốc Bảo</td>
+                    <td>User Experience Design</td>
+                    <td>09:15–09:30</td>
+                    <td>Hà My</td>
+                    <td>A-201</td>
+                    <td><span class="status-badge status-badge--confirmed">Confirmed</span></td>
+                  </tr>
+                  <tr>
+                    <td>CF-031 · Vũ Khánh Linh</td>
+                    <td>Content Creation</td>
+                    <td>09:00–09:15</td>
+                    <td>Gia Huy</td>
+                    <td>B-105</td>
+                    <td><span class="status-badge status-badge--confirmed">Confirmed</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="action-row">
+              <button class="button button--secondary" type="button" disabled>Sửa phân công</button>
+              <button class="button button--secondary" type="button" disabled>Giải quyết xung đột</button>
+              <button class="button button--secondary" type="button" disabled>+ Gán khung giờ</button>
+              <button class="button button--secondary" type="button" disabled>Lưu thay đổi</button>
+              <button class="button button--secondary" type="button">Xuất lịch</button>
+            </div>
+            <p class="field-hint">Sau khi xác nhận, cấu hình chiến dịch, quyết định vòng CV và lịch được khóa. Phần đánh giá và kết quả cuối vẫn thuộc giai đoạn sau.</p>
+          </div>
+        </details>
       </div>
     </main>
 

@@ -109,4 +109,4 @@ The two developers must record and agree on these items before parallel implemen
 | Counts | Campaign quotas, application/applicant statistics, Shortlisted inputs, schedule row count, and Proposed/Conflict/Unassigned totals must reconcile across pages. |
 | Stress-test content | At least one long Vietnamese name or long title that must wrap without causing page overflow. |
 
-TODO: Developers record the agreed values and visual direction in their implementation handoff or pull requests before coding begins.
+Implementation status: the final shared values and visual direction are represented consistently in the three HTML pages and summarized in `PROTOTYPE.md`. The repository does not record an authoritative per-developer ownership allocation, so none is inferred here.

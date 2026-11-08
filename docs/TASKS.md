@@ -1,6 +1,6 @@
 # ClubFlow PA#2 Developer Handoff
 
-Names, student IDs, screen ownership, and shared-CSS ownership remain TODO until the team records its decision. The two developers—not the team leader—must divide all three screen implementations between themselves.
+Status: this is the historical pre-implementation handoff. Current team identities are recorded in `PROTOTYPE.md`; authoritative leader/developer allocation, screen ownership, and shared-CSS ownership were not recorded, so the ownership TODOs below remain unresolved rather than being invented after implementation.
 
 Read `AGENTS.md`, `docs/SCREEN-CONTRACT.md`, `docs/PA2-CHECKLIST.md`, and all five files in `docs/requirements/` before implementation.
 

@@ -1,9 +1,12 @@
-W3C Nu HTML Checker result for index.html
-Submitted: 2026-11-08
+Official W3C Nu HTML Checker result for index.html
+Checked: 2026-11-08T14:37:39+07:00
+Endpoint: https://validator.w3.org/nu/
+Submission: multipart/form-data file upload (index.html, text/html)
+HTTP status: 200
+Checker response: The document validates according to the specified schema(s).
+Checker version reported by the file-upload response: 26.11.5
 Errors: 0
 Warnings: 0
 
-{
-  "version": "26.11.4",
-  "messages": []
-}
+Structured official-endpoint cross-check:
+{"version":"26.11.4","messages":[],"language":"vi"}
