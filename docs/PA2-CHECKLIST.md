@@ -87,51 +87,51 @@ The five course sources in `docs/requirements/` control this checklist. Check an
 
 ## Responsive checks at 360, 768, and 1280 px
 
-- [ ] Check every page at 360 px.
-- [ ] Check every page at 768 px.
-- [ ] Check every page at 1280 px.
-- [ ] At each width, confirm `document.documentElement.clientWidth` equals the selected viewport width.
-- [ ] At each width, confirm `document.documentElement.scrollWidth > document.documentElement.clientWidth` returns `false`.
+- [x] Check every page at 360 px.
+- [x] Check every page at 768 px.
+- [x] Check every page at 1280 px.
+- [x] At each width, confirm `document.documentElement.clientWidth` equals the selected viewport width.
+- [x] At each width, confirm `document.documentElement.scrollWidth > document.documentElement.clientWidth` returns `false`.
 - [ ] At each width, confirm the rubric's protruding-element query returns `[]`, except content intentionally contained by a table's own scrolling wrapper.
 - [ ] Confirm nothing is cut off, clipped, or overlapping and long content wraps.
 - [ ] Do not use `overflow-x: hidden` to conceal a layout defect.
-- [ ] At 360 px, confirm standalone buttons and links are at least 44 px tall.
+- [x] At 360 px, confirm standalone buttons and links are at least 44 px tall.
 - [ ] Confirm each layout changes appropriately between phone and laptop rather than stretching one narrow column.
 
 ## Semantic HTML, accessibility, and design checks
 
-- [ ] Use `header`, `nav`, `main`, and `footer` appropriately on every page.
-- [ ] Give every page exactly one `h1` and no skipped heading level.
-- [ ] Use buttons for actions and anchors/form submissions for navigation.
-- [ ] Give every input a visible associated label whose text activates the control.
+- [x] Use `header`, `nav`, `main`, and `footer` appropriately on every page.
+- [x] Give every page exactly one `h1` and no skipped heading level.
+- [x] Use buttons for actions and anchors/form submissions for navigation.
+- [x] Give every input a visible associated label whose text activates the control.
 - [ ] Give every image an appropriate `alt` value.
 - [ ] Check the final heading outline and semantics in the browser Accessibility pane.
-- [ ] Run the W3C checker on `index.html`, achieve zero errors, and save the actual result.
-- [ ] Run the W3C checker on `review.html`, achieve zero errors, and save the actual result.
-- [ ] Run the W3C checker on `scheduling.html`, achieve zero errors, and save the actual result.
-- [ ] Keep body text at least 16 px.
+- [x] Run the W3C checker on `index.html`, achieve zero errors, and save the actual result.
+- [x] Run the W3C checker on `review.html`, achieve zero errors, and save the actual result.
+- [x] Run the W3C checker on `scheduling.html`, achieve zero errors, and save the actual result.
+- [x] Keep body text at least 16 px.
 - [ ] Confirm body text and buttons meet 4.5:1 contrast in the browser colour picker.
-- [ ] Use the documented spacing scale consistently with only justified exceptions.
-- [ ] Use no more than one CSS framework and no `!important` in custom CSS.
-- [ ] Give each page one clearly dominant element or action.
+- [x] Use the documented spacing scale consistently with only justified exceptions.
+- [x] Use no more than one CSS framework and no `!important` in custom CSS.
+- [x] Give each page one clearly dominant element or action.
 
 ## Required full-page screenshots with JavaScript disabled
 
-- [ ] `screenshots/index-360.png`
-- [ ] `screenshots/index-768.png`
-- [ ] `screenshots/index-1280.png`
-- [ ] `screenshots/review-360.png`
-- [ ] `screenshots/review-768.png`
-- [ ] `screenshots/review-1280.png`
-- [ ] `screenshots/scheduling-360.png`
-- [ ] `screenshots/scheduling-768.png`
-- [ ] `screenshots/scheduling-1280.png`
+- [x] `screenshots/index-360.png`
+- [x] `screenshots/index-768.png`
+- [x] `screenshots/index-1280.png`
+- [x] `screenshots/review-360.png`
+- [x] `screenshots/review-768.png`
+- [x] `screenshots/review-1280.png`
+- [x] `screenshots/scheduling-360.png`
+- [x] `screenshots/scheduling-768.png`
+- [x] `screenshots/scheduling-1280.png`
 
 ## W3C evidence
 
-- [ ] `checks/validator-index.png` or `checks/validator-index.txt`
-- [ ] `checks/validator-review.png` or `checks/validator-review.txt`
-- [ ] `checks/validator-scheduling.png` or `checks/validator-scheduling.txt`
+- [x] `checks/validator-index.png` or `checks/validator-index.txt`
+- [x] `checks/validator-review.png` or `checks/validator-review.txt`
+- [x] `checks/validator-scheduling.png` or `checks/validator-scheduling.txt`
 
 ## Required English documents and honest evidence
 

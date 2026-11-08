@@ -1,0 +1,9 @@
+W3C Nu HTML Checker result for review.html
+Submitted: 2026-11-08
+Errors: 0
+Warnings: 0
+
+{
+  "version": "26.11.4",
+  "messages": []
+}
