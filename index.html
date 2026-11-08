@@ -25,7 +25,7 @@
         <div>
           <p class="eyebrow">Bước 1 / 3 · Thiết lập chiến dịch</p>
           <h1>Create Recruitment Campaign</h1>
-          <p>Chuẩn bị thông tin đợt tuyển của CLB Công nghệ &amp; Sáng tạo.</p>
+          <p>Chuẩn bị thông tin tuyển thành viên và cấu hình phỏng vấn cho cùng một chiến dịch.</p>
         </div>
         <div class="button-row" role="group" aria-label="Thao tác chiến dịch">
           <button class="button button--secondary" type="button">Lưu bản nháp</button>
@@ -40,6 +40,17 @@
         <li class="flow-step"><span class="flow-step-number">3</span> Xếp lịch phỏng vấn</li>
       </ol>
 
+      <section class="timeline" aria-labelledby="campaign-timeline-title">
+        <h2 id="campaign-timeline-title" class="section-kicker">Mốc thời gian chiến dịch</h2>
+        <div class="timeline-grid">
+          <div class="timeline-item"><strong>12/10/2026</strong><span>Mở đơn ứng tuyển</span></div>
+          <div class="timeline-item"><strong>30/10/2026</strong><span>Đóng đơn ứng tuyển</span></div>
+          <div class="timeline-item"><strong>05/11/2026</strong><span>Phỏng vấn · 09:00–12:00</span></div>
+        </div>
+      </section>
+
+      <p class="campaign-context"><strong>Chiến dịch:</strong> Tuyển Thành Viên Câu Lạc Bộ Công Nghệ &amp; Sáng Tạo — Đợt Tuyển Chính Thức Học Kỳ 1, Năm Học 2026–2027, Dành Cho Sinh Viên Các Khoa Công Nghệ Thông Tin, Thiết Kế Và Truyền Thông</p>
+
       <div class="campaign-layout">
         <div class="stack stack--roomy">
           <section class="card" aria-labelledby="campaign-info-title">
@@ -51,7 +62,7 @@
               <div class="field-grid">
                 <div class="field">
                   <label for="campaign-name">Tên chiến dịch</label>
-                  <input id="campaign-name" name="campaign-name" value="Tuyển thành viên CLB 2026">
+                  <textarea id="campaign-name" name="campaign-name" rows="4">Tuyển Thành Viên Câu Lạc Bộ Công Nghệ &amp; Sáng Tạo — Đợt Tuyển Chính Thức Học Kỳ 1, Năm Học 2026–2027, Dành Cho Sinh Viên Các Khoa Công Nghệ Thông Tin, Thiết Kế Và Truyền Thông</textarea>
                 </div>
                 <div class="field">
                   <label for="host-club">Câu lạc bộ chủ trì</label>
@@ -60,7 +71,7 @@
               </div>
               <div class="field">
                 <label for="campaign-description">Mô tả chiến dịch</label>
-                <textarea id="campaign-description" name="campaign-description" rows="3">Tìm đồng đội cùng xây dựng sản phẩm hữu ích cho sinh viên.</textarea>
+                <textarea id="campaign-description" name="campaign-description" rows="4">Cùng xây dựng các sản phẩm số và nội dung truyền thông hữu ích cho cộng đồng sinh viên trong năm học 2026–2027.</textarea>
               </div>
               <div class="field-grid">
                 <div class="field">
@@ -74,7 +85,7 @@
               </div>
               <div class="field">
                 <label for="application-instructions">Hướng dẫn ứng tuyển</label>
-                <textarea id="application-instructions" name="application-instructions" rows="3">Chọn vị trí phù hợp, chuẩn bị CV PDF tối đa 5 MB, viết bài trình bày nguyện vọng tối đa 300 từ và chọn các khung giờ phỏng vấn có thể tham gia.</textarea>
+                <textarea id="application-instructions" name="application-instructions" rows="4">Chọn một vị trí phù hợp, chuẩn bị CV định dạng PDF tối đa 5 MB, viết bài trình bày nguyện vọng tối đa 300 từ và chọn các khung giờ phỏng vấn có thể tham gia. Mỗi vị trí cần một hồ sơ riêng.</textarea>
               </div>
             </div>
           </section>
@@ -87,36 +98,40 @@
             <div class="stack">
               <article class="position-card">
                 <div>
-                  <h3>Sản phẩm số</h3>
-                  <p class="position-meta">Ban Sản phẩm · 2 chỉ tiêu</p>
+                  <p class="section-kicker">Department</p>
+                  <h3>Digital Product</h3>
+                  <p class="position-meta">2 chỉ tiêu</p>
                 </div>
                 <div>
-                  <p><strong>Mô tả:</strong> Nghiên cứu và phác thảo luồng sản phẩm.</p>
-                  <p><strong>Yêu cầu:</strong> Biết dùng Figma, tư duy lấy người dùng làm trung tâm.</p>
+                  <p><strong>Position:</strong> User Experience Design</p>
+                  <p><strong>Mô tả công việc:</strong> Nghiên cứu nhu cầu và phác thảo luồng sản phẩm số cho sinh viên.</p>
+                  <p><strong>Yêu cầu:</strong> Biết dùng Figma, trình bày rõ ràng và có tư duy lấy người dùng làm trung tâm.</p>
                 </div>
               </article>
               <article class="position-card">
                 <div>
-                  <h3>Sáng tạo nội dung</h3>
-                  <p class="position-meta">Ban Truyền thông · 2 chỉ tiêu</p>
+                  <p class="section-kicker">Department</p>
+                  <h3>Communications</h3>
+                  <p class="position-meta">2 chỉ tiêu</p>
                 </div>
                 <div>
-                  <p><strong>Mô tả:</strong> Lên ý tưởng và viết nội dung cho các kênh của CLB.</p>
-                  <p><strong>Yêu cầu:</strong> Viết rõ ràng, có khả năng phối hợp nhóm.</p>
+                  <p><strong>Position:</strong> Content Creation</p>
+                  <p><strong>Mô tả công việc:</strong> Lên ý tưởng và viết nội dung cho các kênh truyền thông của câu lạc bộ.</p>
+                  <p><strong>Yêu cầu:</strong> Viết mạch lạc, chủ động phản hồi và phối hợp tốt với nhóm thiết kế.</p>
                 </div>
               </article>
             </div>
           </section>
         </div>
 
-        <aside class="stack" aria-label="Cấu hình phỏng vấn">
+        <aside class="stack stack--roomy" aria-label="Chuẩn bị và xem trước chiến dịch">
           <section class="card" aria-labelledby="interview-setup-title">
             <h2 id="interview-setup-title">Chuẩn bị phỏng vấn</h2>
             <div class="stack">
               <div class="field">
                 <label for="interview-date">Ngày phỏng vấn</label>
                 <input id="interview-date" name="interview-date" type="date" value="2026-11-05">
-                <p class="field-hint">05/11/2026 · sau ngày đóng đơn 30/10/2026</p>
+                <p class="field-hint">Sau ngày đóng đơn 30/10/2026.</p>
               </div>
               <div class="field">
                 <label for="interview-window">Khung giờ ứng viên chọn</label>
@@ -133,17 +148,55 @@
                   <option>30 phút</option>
                 </select>
               </div>
-              <div class="alert alert--info">
-                Khung giờ phỏng vấn thuộc cùng một ngày và diễn ra sau khi đóng đơn.
+            </div>
+          </section>
+
+          <section class="card" aria-labelledby="validation-example-title">
+            <h2 id="validation-example-title">Ví dụ trạng thái thay thế: chiến dịch không hợp lệ</h2>
+            <div class="stack">
+              <div class="field">
+                <label for="invalid-campaign-description">Mô tả chiến dịch</label>
+                <textarea id="invalid-campaign-description" name="invalid-campaign-description" rows="3" aria-invalid="true" aria-describedby="invalid-campaign-description-error"></textarea>
+                <p class="field-error" id="invalid-campaign-description-error">Mô tả chiến dịch là bắt buộc. Hãy thêm mô tả trước khi công bố.</p>
+              </div>
+              <div class="button-row">
+                <button class="button" id="invalid-campaign-publish" type="button" disabled aria-describedby="invalid-campaign-description-error">Công bố chiến dịch</button>
               </div>
             </div>
           </section>
-          <div class="action-row">
-            <a class="button button--secondary" href="review.html">Mở Application Review →</a>
-          </div>
-          <p class="field-hint">Hồ sơ mẫu được xem như đã nộp sau khi chiến dịch mở. Chuyển trang không tự tạo hoặc duyệt hồ sơ.</p>
+
+          <section class="card" aria-labelledby="campaign-preview-title">
+            <div class="card-heading">
+              <h2 id="campaign-preview-title">Xem trước chiến dịch</h2>
+              <span class="status-badge">Chỉ đọc</span>
+            </div>
+            <div class="preview-panel">
+              <p class="section-kicker">Nội dung ứng viên sẽ thấy</p>
+              <p class="preview-title">Tuyển Thành Viên Câu Lạc Bộ Công Nghệ &amp; Sáng Tạo — Đợt Tuyển Chính Thức Học Kỳ 1, Năm Học 2026–2027, Dành Cho Sinh Viên Các Khoa Công Nghệ Thông Tin, Thiết Kế Và Truyền Thông</p>
+              <dl class="summary-list">
+                <div><dt>Thời gian nhận đơn</dt><dd>12/10/2026–30/10/2026</dd></div>
+                <div><dt>Vị trí</dt><dd>User Experience Design · Content Creation</dd></div>
+                <div><dt>Phỏng vấn</dt><dd>05/11/2026 · 09:00–12:00 · 15 phút/ca</dd></div>
+              </dl>
+            </div>
+          </section>
         </aside>
       </div>
+
+      <details class="state-example" open>
+        <summary>Ví dụ trạng thái thay thế: chiến dịch đã được công bố</summary>
+        <div class="state-example-body">
+          <div class="published-grid">
+            <div>
+              <span class="status-badge status-badge--confirmed">Đã công bố</span>
+              <p class="alert alert--success">Ứng viên có thể nộp hồ sơ từ 12/10/2026 đến 30/10/2026.</p>
+            </div>
+            <p>Bước tiếp theo: duyệt 6 hồ sơ mẫu của chiến dịch.</p>
+            <a class="button" href="review.html">Mở Application Review →</a>
+          </div>
+          <p class="field-hint">Công bố không tự khóa cấu hình chiến dịch. Trạng thái chỉ đọc chỉ áp dụng sau khi lịch phỏng vấn được xác nhận.</p>
+        </div>
+      </details>
     </main>
 
     <footer class="site-footer">

@@ -104,3 +104,53 @@ Rejected: No images were regenerated, cropped, edited, substituted, or taken fro
 By hand: No manual user review or team-authored implementation contribution was claimed for this phase.
 
 Checks: Opened all three supplied source PNGs for visual identification; compared SHA-256 hashes and byte lengths between each source and destination; checked the README image links resolve; checked the design files are not Git-ignored; confirmed tracked HTML, CSS, existing screenshots, and existing checks have no diff; and inspected the final Phase 1 diff and staged paths before committing.
+
+## 2026-11-08 — Phase 2: Complete the ClubFlow PA#2 static prototype
+
+Tool: OpenAI Codex and Microsoft Edge in headless mode.
+
+Asked for: Complete the three-screen static prototype from the approved visual references while preserving the plain HTML/CSS stack, maintaining a coherent cross-screen data contract, documenting the actual work, and stopping before staging, committing, pushing, merging, or Phase 3 evidence generation.
+
+Kept: The static HTML5/plain-CSS architecture, shared deep-blue visual direction and spacing scale, three-screen scope, real relative navigation, approved reference images, course source files, existing screenshots, existing validator records, repository history, and current branch.
+
+Changed: Expanded the campaign screen with the long campaign identity, timeline, complete recruitment data, static validation example, readable preview, and a clearly labelled published-state example. Expanded Application Review with six coherent application records, five distinct candidates, accurate status totals, filters, one-page pagination, full sample statement, honest unavailable-CV control, labelled notes, and per-application decision affordances. Expanded Interview Scheduling with date/time/duration and room controls, interviewer assignments, four eligible applications, one proposed/two conflict/one unassigned draft states, blocking conditions, and a separate confirmed/read-only example. Updated shared CSS for the responsive layouts and corrected the design README links to the currently registered image filenames. Added the actual Phase 2 prompt to `brief.md`.
+
+Rejected: No dependencies, JavaScript, backend, persistence, working filter/export/scheduling logic, fabricated CV file, or invented dynamic state changes were added. Existing submission screenshots and saved validator checks were not overwritten.
+
+By hand: No manual user review, approval, or team-authored implementation contribution is claimed for this phase.
+
+Checks: Inspected all nine temporary Edge captures at 360, 768, and 1280 px with JavaScript execution disabled. The first browser pass exposed document-level overflow on the scheduling page at 360 and 768 px; CSS intrinsic sizing was corrected and all nine pages were recaptured. The final pass reported one `h1`, zero script elements, 16 px body text, no document-level horizontal overflow, no elements protruding outside the viewport except tables contained by their scroll wrappers, and no standalone links or buttons below 44 px. Checked relative links and assets, form-label associations, HTML landmarks, forbidden navigation/CSS patterns, and cross-screen campaign dates, position mappings, IDs, counts, and statuses. Recalculated the active foreground/background palette pairs: all exceeded 4.5:1, with the lowest checked ratio at 7.66:1. W3C Nu validation was attempted, but the service returned a Cloudflare challenge rather than validation results, so no W3C result is claimed. The temporary review captures were kept outside the repository and are not submission evidence.
+
+Evidence status: The existing files under `screenshots/` and `checks/` describe the earlier implementation and are now stale. They need to be regenerated and reviewed in Phase 3; they were left unchanged in this phase.
+
+## 2026-11-08 — Phase 2 finishing pass: fictional CV and concise interface notes
+
+Tool: OpenAI Codex, Microsoft Edge in headless mode, and the local PyMuPDF parser.
+
+Asked for: Finish Phase 2 by adding a clearly labelled synthetic CF-026 sample CV, moving repetitive implementation explanations into `PROTOTYPE.md`, and rechecking the Review screen at 360, 768, and 1280 px with JavaScript disabled.
+
+Kept: The existing CF-026 application identity, static HTML/plain-CSS architecture, application data, alternate-state labels, responsive layout, existing submission evidence, current branch, and Git history.
+
+Changed: Added a one-page local PDF labelled as a fictional sample and containing only synthetic information, including an `.invalid` contact address and fictional organization/project names. Replaced the disabled CV placeholder with a real relative link. Removed repetitive static-behavior explanations from the interfaces and consolidated the unwired behavior in `PROTOTYPE.md` while retaining concise labels for invalid, published, and confirmed examples. Appended the actual finishing prompt to `brief.md`.
+
+Rejected: No real personal data, identity verification claim, external document, JavaScript behavior, dependency, backend feature, Phase 3 evidence, or fabricated check result was added. No manual user review or approval is claimed.
+
+By hand: No team-authored implementation contribution is recorded for this task.
+
+Checks: Confirmed the PDF header is `%PDF-1.4`; opened it with the local PDF parser as a one-page document; extracted its fictional-data labels and synthetic `.invalid` address; rendered the page and visually inspected the result. Edge accepted the local PDF URL with exit code 0, but its headless built-in PDF viewer produced a blank screenshot, so that screenshot was not treated as visual proof. Checked every local `href` and `src` target. Loaded `review.html` directly from disk in Edge at 360, 768, and 1280 px with page JavaScript disabled; each final run had one `h1`, zero scripts, 16 px body text, no document-level horizontal overflow, no protruding elements, and no standalone links or buttons below 44 px. The local CV link resolved to the intended PDF at every width. Review captures remained outside the repository, and existing `screenshots/` and `checks/` were not changed.
+
+## 2026-11-08 — Phase 2 final Publish-state correction and recheck
+
+Tool: OpenAI Codex and Microsoft Edge controlled through the browser debugging protocol.
+
+Asked for: Correct the invalid campaign publication example so it includes an associated field error and a visibly disabled native Publish button, then rerun the three-page responsive regression checks without JavaScript and stop before committing or Phase 3 evidence work.
+
+Kept: The static HTML/plain-CSS architecture, existing enabled draft actions, separate published-state example, Review and Scheduling markup and data, current branch, staged changes, submission screenshots, and saved validator evidence.
+
+Changed: Replaced the invalid-state explanatory alert in `index.html` with a clearly labelled alternate state containing an empty description field, a visible associated validation error, and a real `button` with the native `disabled` attribute. Reused the existing shared disabled-button CSS treatment instead of adding a one-off rule. Appended the actual correction prompt to `brief.md`.
+
+Rejected: No JavaScript, dependency, backend behavior, publishing logic, unrelated page rewrite, screenshot regeneration, validator regeneration, commit, push, or branch switch was performed.
+
+Checks: Loaded all three pages from the local HTTP server in Edge at exact 360, 768, and 1280 px viewport widths with page JavaScript disabled. Checked the full document through the footer, document overflow, non-table protrusion, content clipping, interactive overlap, standalone button/link height, labels, heading count, body text size, font loading, long-name wrapping, table containment, application and scheduling statistics, and keyboard focus entry. Activated the relative navigation links with native pointer input. Confirmed the invalid field is labelled and references its visible error, the Publish button matches `:disabled`, uses the shared disabled colors and `not-allowed` cursor, is skipped by keyboard navigation, and emits no click event under native pointer input. Opened all three pages through `file:` URLs at 360 px and confirmed no document overflow and relative navigation destinations. Source inspection confirmed the project HTML contains no script elements; the local development server injects its own reload script. During the final pre-commit check, compared the working-tree and staged CV bytes with the previously approved recovered Git blob; all matched exactly. PyMuPDF opened the `%PDF-1.4` file as a valid one-page document, extracted CF-026 and Nguyễn Minh Anh, and rendered the page successfully. The Review link returned HTTP 200 with `application/pdf`, and a native browser click opened the PDF in Edge's viewer, where the fictional banner and applicant content rendered correctly.
+
+Result: The requested campaign-state correction and all nine responsive browser cases passed. The approved fictional CV is restored, staged, byte-identical to Git blob `b0d3d1bf32031474c05ddb06b90584d180af58e7`, and verified through both PyMuPDF and the browser. No remaining Phase 2 implementation blocker was found. Current W3C results, submission screenshots, and self-assessment remain Phase 3 work and were not treated as UI failures.

@@ -376,3 +376,236 @@ Report:
 - Missing files or unresolved issues.
 - Commit hash and final Git status.
 ```
+
+## Prompt 8 — 2026-11-08
+
+```text
+Execute Phase 2: complete the ClubFlow PA2 static prototype using the approved wireframes.
+
+IMPORTANT:
+Do not stage, commit, push, merge or change branches.
+Finish the implementation and verification, then STOP for my review.
+Commit only after I explicitly approve it in a later message.
+
+1. Read and inspect
+- Read AGENTS.md, the course sources in docs/requirements/,
+  docs/SCREEN-CONTRACT.md and docs/design/README.md.
+- Visually inspect all three approved Final wireframes in docs/design/.
+- Inspect current HTML, CSS and git status before editing.
+- Stay on feat/pa2-finalize. If another branch is active, report it before editing.
+- Preserve unrelated changes and existing Git history.
+
+2. Scope
+- Static HTML5 and plain CSS, no new dependencies or JavaScript.
+- No backend, persistence, real filtering, scheduling algorithm or dynamic business logic.
+- Preserve useful existing implementation.
+- Use the wireframes as visual references, adapting layouts for responsive and semantic HTML.
+- Course requirements take priority over image omissions.
+- Keep the existing interface language consistent.
+- Alternate-state examples may use clearly labelled sections or native details/summary.
+- All content must remain accessible with JavaScript disabled.
+
+3. Shared CSS and Campaign
+Update assets/css/styles.css and index.html:
+- Match the approved visual direction without reproducing every pixel.
+- Reuse the spacing scale, colours and shared components.
+- Campaign information, dates, instructions, departments, positions, quotas,
+  job descriptions and requirements.
+- Save Draft, Preview and Publish controls.
+- A readable static campaign preview.
+- A clearly labelled Published example if used.
+- A working relative link to review.html.
+- Use an intentionally long Vietnamese campaign title consistently across all three pages.
+- Do not lock campaign configuration merely because it is published.
+
+4. Application Review
+Update review.html:
+- Consistent campaign context and realistic application/applicant statistics.
+- Search, position/status filters, sorting and coherent pagination representation.
+- If all six records are on one page, show Page 1/1 with appropriate disabled
+  pagination controls; do not invent a second page.
+- List and readable application details: candidate information, full sample SOP,
+  CV affordance, visible labelled note textarea, Shortlist and Reject controls.
+- Clear affordances for reviewing an application and closing its details.
+- Do not claim state preservation or saving actually works if it is only illustrative.
+- Decisions apply to individual applications, including separate applications
+  from the same candidate.
+- Relative navigation to index.html and scheduling.html.
+- Do not invent a working CV link. Reuse a valid local sample if available;
+  otherwise report the missing asset and represent the control honestly.
+
+5. Interview Scheduling
+Update scheduling.html:
+- Date, time window and duration controls with 15/20/30-minute options.
+- Interviewer-position assignments, availability and existing room choices.
+- Draft schedule with Proposed, Conflict and Unassigned states.
+- Concrete availability/reasons sufficient to explain the sample schedule.
+- Edit, Resolve, Assign Slot, Save Changes and Export controls.
+- A real sample conflict and internally consistent totals.
+- If Review contains a pending application, confirmation must remain blocked.
+- A compact, clearly separated Confirmed/read-only example may illustrate the final state.
+- If the confirmed example still has only four interviews, explicitly show that
+  pending CF-028 was rejected during CV screening.
+- Use this wording:
+  “You will be asked before replacing the current draft.”
+- Do not implement revalidation, regeneration or confirmation logic.
+- Provide relative navigation back to review.html.
+
+6. Cross-screen requirements
+- Use identical campaign identity, dates, positions and application IDs.
+- Department Digital Product → Position User Experience Design.
+- Department Communications → Position Content Creation.
+- Applicant and interviewer identities must be distinct.
+- Counts and statuses must match their displayed records.
+- Avoid all eight Fix these problems.
+- One h1 per page, appropriate landmarks and heading order.
+- Visible associated labels; actions are buttons, navigation uses anchors.
+- Main-flow links must resolve to real relative HTML destinations.
+- No href="#" substitutes or onclick navigation.
+- Body text at least 16 px; standalone mobile targets at least 44 px.
+- No custom !important or overflow-x: hidden used to conceal layout problems.
+- Support 360, 768 and 1280 px; tables may scroll inside their own wrapper.
+
+7. Documentation during this task
+- Append this actual prompt to brief.md.
+- Update AI-LOG.md honestly with changes and checks actually performed.
+- Do not attribute my review or approval before I provide it.
+- Do not finalize self-assessment scores or claim submission readiness.
+- Do not overwrite existing submission screenshots/checks in this phase.
+  Report which evidence becomes stale and needs regeneration in Phase 3.
+
+8. Verify before handing back
+- Check relative links and asset paths.
+- Review cross-screen dates, positions, counts and statuses.
+- Inspect HTML structure and CSS.
+- If browser tooling is available, inspect all three pages at the three widths
+  with JavaScript disabled and fix obvious layout defects.
+- Keep review captures separate from final submission evidence.
+- Do not claim browser or W3C checks that were not performed.
+- Inspect git diff and confirm no unrelated files were modified.
+
+Finish with:
+- Files changed and concrete changes per page.
+- Checks actually performed.
+- Any unresolved issues, missing assets or assumptions.
+- How I can open and review the three pages.
+- Suggested separate commit messages for each page, without committing.
+- Final git status.
+
+STOP and wait for my review. Do not proceed to Phase 3.
+```
+
+## Prompt 9 — 2026-11-08
+
+```text
+Finish Phase 2 with these limited changes:
+
+1. Add a clearly labelled fictional sample CV for CF-026, using synthetic
+   information only. Prefer a valid local PDF and a real relative link from
+   review\.html. Do not use personal data or fabricate verification evidence.
+
+2. Move repetitive implementation explanations out of the interface into
+   PROTOTYPE.md's “Not wired yet” section. Keep the UI concise while preserving
+   clear labels for alternate-state examples.
+
+3. Verify the CV opens, relative links resolve, and the changed Review layout
+   still works at 360/768/1280 with JavaScript disabled.
+
+Update the actual prompt record and AI-log honestly.
+Do not stage, commit, push or start Phase 3.
+Report changes, checks and remaining issues for my review.
+```
+
+## Prompt 10 — 2026-11-08
+
+```text
+# ClubFlow PA#2 — Phase 2 Final Correction and Recheck
+
+The independent browser audit is complete.
+
+Results:
+
+- All 9 responsive test cases PASS.
+- Navigation PASS.
+- Business-data consistency PASS.
+- Accessibility checks PASS.
+- One remaining Phase 2 UI defect: the invalid campaign example does not display a disabled Publish control.
+
+## Task 1 — Fix the invalid Publish state
+
+Inspect `index.html` and the relevant styles in `assets/css/styles.css`.
+
+Correct the invalid campaign publication example so that:
+
+1. The invalid campaign state clearly communicates why publishing is blocked.
+2. A real Publish button is visibly disabled in that invalid state.
+3. Use the native HTML `disabled` attribute.
+4. The button styling clearly communicates its disabled state.
+5. Error text is associated with the relevant field.
+6. The separate Published example remains clearly distinguishable.
+7. There is no contradiction between the validation message and the available actions.
+
+Preserve the current static HTML/CSS implementation.
+
+Do not introduce JavaScript or dependencies.
+
+Do not implement actual publishing logic.
+
+## Task 2 — Regression testing
+
+After the correction, repeat browser testing with JavaScript disabled.
+
+Verify all three pages at:
+
+- 360px
+- 768px
+- 1280px
+
+Check:
+
+- No horizontal overflow.
+- No clipping or overlapping.
+- Existing navigation remains functional.
+- Existing application and scheduling statistics remain unchanged.
+- Campaign validation state is now semantically correct.
+- Disabled button is visually identifiable and cannot be activated.
+- Keyboard focus and labels remain correct.
+
+Also verify direct file opening compatibility for all three HTML pages, if local browser permissions allow.
+
+## Task 3 — Final assessment
+
+Compare the corrected prototype against the ClubFlow PA#2 rubric.
+
+Separate:
+
+- Phase 2 implementation defects.
+- Phase 3 evidence/documentation tasks.
+- Unverified requirements.
+
+Do not treat stale screenshots, missing current W3C results, or unfinished self-assessment as functional UI defects. They remain required before final submission.
+
+## Task 4 — Report for review
+
+Return:
+
+1. Files changed.
+2. Exact correction made.
+3. Regression test matrix.
+4. Remaining UI defects.
+5. Remaining Phase 3 tasks.
+6. Whether Phase 2 implementation is ready to commit.
+
+## Restrictions
+
+- Do not commit or push.
+- Do not switch branches.
+- Do not regenerate screenshots.
+- Do not regenerate W3C evidence.
+- Do not rewrite unrelated pages.
+- Do not install packages.
+- Preserve existing staged changes.
+- Show the final diff and wait for my review.
+
+Stop after reporting.
+```

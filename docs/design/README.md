@@ -4,15 +4,15 @@ These approved wireframes are visual references for the three ClubFlow PA#2 scre
 
 | Approved reference | Implementation page |
 |---|---|
-| [Create Recruitment Campaign](01-Create-Recruitment-Campaign-Final.png) | `index.html` |
-| [Application Review](02-Application-Review-Final.png) | `review.html` |
-| [Interview Scheduling](03-Interview-Scheduling-Final.png) | `scheduling.html` |
+| [Create Recruitment Campaign](01-Create-Recruitment-Campaign.png) | `index.html` |
+| [Application Review](02-Application-Review.png) | `review.html` |
+| [Interview Scheduling](03-Interview-Scheduling.png) | `scheduling.html` |
 
 Implementation may adapt these layouts to produce responsive, semantic HTML. Course requirements take priority over any omission in the images.
 
 Alternate-state panels in the wireframes are illustrative. The static PA#2 prototype does not require a backend or dynamic business logic.
 
-## Wording correction for later implementation
+## Wording correction applied in Phase 2
 
 Replace:
 
@@ -24,4 +24,4 @@ with:
 
 ## Alignment status
 
-Implementation alignment is pending.
+The Phase 2 implementation is complete and awaits user review. Final submission evidence remains pending Phase 3.
