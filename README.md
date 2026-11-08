@@ -1,6 +1,6 @@
 # ClubFlow Responsive Prototype
 
-ClubFlow is a completed static HTML5 and plain-CSS prototype for the three PA#2 Executive screens. It includes final responsive implementation, a fictional local CV, approved wireframe references, and Phase 3 browser/validation evidence.
+ClubFlow is a completed static HTML5 and plain-CSS prototype for the three PA#2 Executive screens. It includes final responsive implementation, a fictional local CV, approved wireframe references, and current browser/validation evidence.
 
 ## Open the prototype
 
@@ -18,11 +18,11 @@ Open `index.html` directly in a browser. No installation, network connection, de
 - `PROTOTYPE.md`, `brief.md`, `AI-LOG.md`, and `SELF_ASSESSMENT_REPORT.md`: required project documentation.
 - `AGENTS.md`: repository-wide implementation rules.
 
-## Collaboration workflow
+## Collaboration notes
 
 - Open `index.html` directly; the selected static stack needs no installation or build.
-- Each developer creates feature branches from the latest `main`.
-- Use one implementation branch per screen: `feat/campaign`, `feat/application-review`, and `feat/interview-scheduling`.
+- The current repository history uses consolidated phase commits on `feat/pa2-finalize`.
+- For future work, create feature branches from the latest `main` and use one implementation branch per independently reviewed screen or task.
 - Agree on the owner of shared `assets/css/styles.css` before changing it.
 - Submit each screen through a pull request for team-leader review.
 - Preserve meaningful per-screen commits when merging.

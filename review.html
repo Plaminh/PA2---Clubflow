@@ -40,10 +40,22 @@
 
       <section class="stack stack--roomy" aria-label="Thống kê và danh sách hồ sơ">
         <div class="stats-grid">
-          <div class="stat-card"><span class="stat-value">6</span><span class="stat-label">Tổng hồ sơ</span></div>
-          <div class="stat-card"><span class="stat-value">5</span><span class="stat-label">Ứng viên riêng biệt</span></div>
-          <div class="stat-card"><span class="stat-value">4</span><span class="stat-label">Qua vòng CV</span></div>
-          <div class="stat-card"><span class="stat-value">1 + 1</span><span class="stat-label">Chờ duyệt + Loại</span></div>
+          <div class="stat-card">
+            <span class="stat-value">6</span>
+            <span class="stat-label">Tổng hồ sơ</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">5</span>
+            <span class="stat-label">Ứng viên riêng biệt</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">4</span>
+            <span class="stat-label">Qua vòng CV</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">1 + 1</span>
+            <span class="stat-label">Chờ duyệt + Loại</span>
+          </div>
         </div>
 
         <section class="card" aria-labelledby="review-tools-title">
@@ -92,12 +104,66 @@
               </div>
             </div>
             <ul class="application-list">
-              <li><div class="application-list-item"><div><strong>CF-031 · Vũ Khánh Linh</strong><span class="list-item-meta">Content Creation · 18/10/2026, 15:30</span><span class="status-badge status-badge--shortlisted">Qua vòng CV</span></div><button class="button button--quiet" type="button">Review</button></div></li>
-              <li><div class="application-list-item"><div><strong>CF-030 · Phạm Quốc Bảo</strong><span class="list-item-meta">User Experience Design · 17/10/2026, 14:20</span><span class="status-badge status-badge--shortlisted">Qua vòng CV</span></div><button class="button button--quiet" type="button">Review</button></div></li>
-              <li><div class="application-list-item"><div><strong>CF-029 · Lê Hoàng Thảo Vy</strong><span class="list-item-meta">User Experience Design · 16/10/2026, 08:45</span><span class="status-badge status-badge--rejected">Loại ở vòng CV</span></div><button class="button button--quiet" type="button">Review</button></div></li>
-              <li><div class="application-list-item"><div><strong>CF-028 · Trần Bảo Ngọc</strong><span class="list-item-meta">Content Creation · 15/10/2026, 11:08</span><span class="status-badge status-badge--pending">Chờ duyệt</span></div><button class="button button--quiet" type="button">Review</button></div></li>
-              <li><div class="application-list-item"><div><strong>CF-027 · Nguyễn Minh Anh</strong><span class="list-item-meta">Content Creation · 14/10/2026, 10:05</span><span class="status-badge status-badge--shortlisted">Qua vòng CV</span></div><button class="button button--quiet" type="button">Review</button></div></li>
-              <li><div class="application-list-item" aria-current="true"><div><strong>CF-026 · Nguyễn Minh Anh</strong><span class="list-item-meta">User Experience Design · 14/10/2026, 09:42</span><span class="status-badge status-badge--shortlisted">Qua vòng CV</span></div><button class="button button--quiet" type="button" disabled>Đang xem</button></div></li>
+              <li>
+                <div class="application-list-item">
+                  <div>
+                    <strong>CF-031 · Vũ Khánh Linh</strong>
+                    <span class="list-item-meta">Content Creation · 18/10/2026, 15:30</span>
+                    <span class="status-badge status-badge--shortlisted">Qua vòng CV</span>
+                  </div>
+                  <button class="button button--quiet" type="button">Review</button>
+                </div>
+              </li>
+              <li>
+                <div class="application-list-item">
+                  <div>
+                    <strong>CF-030 · Phạm Quốc Bảo</strong>
+                    <span class="list-item-meta">User Experience Design · 17/10/2026, 14:20</span>
+                    <span class="status-badge status-badge--shortlisted">Qua vòng CV</span>
+                  </div>
+                  <button class="button button--quiet" type="button">Review</button>
+                </div>
+              </li>
+              <li>
+                <div class="application-list-item">
+                  <div>
+                    <strong>CF-029 · Lê Hoàng Thảo Vy</strong>
+                    <span class="list-item-meta">User Experience Design · 16/10/2026, 08:45</span>
+                    <span class="status-badge status-badge--rejected">Loại ở vòng CV</span>
+                  </div>
+                  <button class="button button--quiet" type="button">Review</button>
+                </div>
+              </li>
+              <li>
+                <div class="application-list-item">
+                  <div>
+                    <strong>CF-028 · Trần Bảo Ngọc</strong>
+                    <span class="list-item-meta">Content Creation · 15/10/2026, 11:08</span>
+                    <span class="status-badge status-badge--pending">Chờ duyệt</span>
+                  </div>
+                  <button class="button button--quiet" type="button">Review</button>
+                </div>
+              </li>
+              <li>
+                <div class="application-list-item">
+                  <div>
+                    <strong>CF-027 · Nguyễn Minh Anh</strong>
+                    <span class="list-item-meta">Content Creation · 14/10/2026, 10:05</span>
+                    <span class="status-badge status-badge--shortlisted">Qua vòng CV</span>
+                  </div>
+                  <button class="button button--quiet" type="button">Review</button>
+                </div>
+              </li>
+              <li>
+                <div class="application-list-item" aria-current="true">
+                  <div>
+                    <strong>CF-026 · Nguyễn Minh Anh</strong>
+                    <span class="list-item-meta">User Experience Design · 14/10/2026, 09:42</span>
+                    <span class="status-badge status-badge--shortlisted">Qua vòng CV</span>
+                  </div>
+                  <button class="button button--quiet" type="button" disabled>Đang xem</button>
+                </div>
+              </li>
             </ul>
             <nav class="pagination" aria-label="Phân trang hồ sơ">
               <button class="button button--secondary" type="button" disabled>← Trang trước</button>
@@ -106,7 +172,7 @@
             </nav>
           </section>
 
-          <article class="card application-detail" aria-labelledby="application-detail-title">
+          <article class="card" aria-labelledby="application-detail-title">
             <div class="card-heading">
               <div>
                 <p class="section-kicker">Hồ sơ đang chọn</p>

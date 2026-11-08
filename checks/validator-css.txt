@@ -1,9 +1,12 @@
 W3C CSS Validator status for assets/css/styles.css
-Checked: 2026-11-08T13:40:42+07:00
+Checked: 2026-11-08T14:33:19+07:00
 Endpoint: https://jigsaw.w3.org/css-validator/validator
 Submission: multipart/form-data file upload
-HTTP status: 403
-Status: NOT VERIFIED for the current Phase 2 source.
-Reason: The official CSS validator returned a Cloudflare challenge instead of a validation result.
+Profile: CSS level 3
+HTTP status: 200
+Status: VALID for the current cleaned source.
+Errors: 0
+Warnings: 1 informational warning (level 0)
+Warning: Due to their dynamic nature, CSS variables are currently not statically checked.
 
-The earlier zero-error result applied to an older source revision and is not reused as current evidence. CSS validation is not one of the three required PA#2 W3C HTML evidence files.
+The validator reported `validity: true`. CSS validation is supplementary; the three required PA#2 W3C HTML evidence files are recorded separately.

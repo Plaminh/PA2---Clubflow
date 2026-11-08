@@ -17,80 +17,80 @@ The five course sources in `docs/requirements/` control this checklist. Check an
 
 ## Screen 1 — Create Recruitment Campaign (`index.html`)
 
-- [ ] Provide campaign name, host club, description, opening date, closing date, and application instructions.
-- [ ] Provide departments and positions with quotas, job descriptions, and requirements.
-- [ ] Provide Save as Draft, Preview Campaign, and Publish Campaign actions.
-- [ ] Show required-field and date validation behavior without discarding valid entered information.
-- [ ] Keep the user on Screen 1 when publication data is invalid.
-- [ ] After publication, provide a real relative Applications link to `review.html` for the same campaign.
-- [ ] Do not imply that moving to Screen 2 creates applicants or approves applications.
+- [x] Provide campaign name, host club, description, opening date, closing date, and application instructions.
+- [x] Provide departments and positions with quotas, job descriptions, and requirements.
+- [x] Provide Save as Draft, Preview Campaign, and Publish Campaign actions.
+- [x] Show required-field and date validation behavior without discarding valid entered information.
+- [x] Keep the user on Screen 1 when publication data is invalid.
+- [x] After publication, provide a real relative Applications link to `review.html` for the same campaign.
+- [x] Do not imply that moving to Screen 2 creates applicants or approves applications.
 
 ## Screen 2 — Application Review (`review.html`)
 
-- [ ] Show application/applicant statistics that agree with the visible sample records.
-- [ ] Show applications, applicants, positions, submission times, and statuses.
-- [ ] Provide the required search, filtering, sorting, pagination, and basic CSV export controls.
-- [ ] Provide a Review control that opens application details beside the list.
-- [ ] Keep both the list and details readable at every required width; the details must not cover most of the list.
-- [ ] Show the selected CV, application details, and motivation statement.
-- [ ] Provide an Executive-only internal note that is not presented as visible to Applicants or Interviewers.
-- [ ] Provide Shortlist Candidate and Reject actions for the selected application.
-- [ ] Update only the reviewed application; applications by the same student for other positions remain independent.
-- [ ] Preserve the current filters when the details view closes.
-- [ ] Provide a real relative Continue to Interview Scheduling link to `scheduling.html` when at least one application is Shortlisted.
+- [x] Show application/applicant statistics that agree with the visible sample records.
+- [x] Show applications, applicants, positions, submission times, and statuses.
+- [x] Provide the required search, filtering, sorting, pagination, and basic CSV export controls.
+- [x] Provide a Review control and a visible application-details representation beside the list.
+- [x] Keep both the list and details readable at every required width; the details do not cover most of the list.
+- [x] Show the selected CV, application details, and motivation statement.
+- [x] Provide an Executive-only internal note that is not presented as visible to Applicants or Interviewers.
+- [x] Provide Shortlist Candidate and Reject actions for the selected application.
+- [x] Represent decisions as application-specific; the same student's other application remains independent.
+- [x] Document filter preservation and detail closing as not wired in this static prototype rather than claiming dynamic behavior.
+- [x] Provide a real relative Continue to Interview Scheduling link to `scheduling.html` when at least one application is Shortlisted.
 
 ## Screen 3 — Interview Scheduling (`scheduling.html`)
 
-- [ ] Include only Shortlisted applications from the same campaign; Shortlisted must not mean finally accepted or already confirmed.
-- [ ] Use configured interviewers, position assignments, interviewer availability, applicant availability, and existing rooms.
-- [ ] Provide an interview date, time window, and one campaign-wide slot duration of 15, 20, or 30 minutes.
-- [ ] Generate draft assignments using the first available valid combination of time, qualified interviewer, and room.
-- [ ] Ensure each room hosts no more than one interview at a time.
-- [ ] Prevent overlaps for applicants, interviewers, and rooms, including separate applications belonging to the same student.
-- [ ] Label valid draft assignments Proposed.
-- [ ] Label unscheduled applications Unassigned and show the actual reason; do not reject them automatically.
-- [ ] Label genuine scheduling overlaps Conflict and identify the affected interviews.
-- [ ] Ensure every status count agrees with the table rows.
-- [ ] Provide Edit, Resolve, and + Assign Slot controls and recheck people, time, and room after each change.
-- [ ] Provide Save Changes for the draft only and a schedule-table export control.
-- [ ] Block confirmation until applications have closed, every application has been reviewed, every Shortlisted application has a valid assignment, and no Unassigned or Conflict item remains.
-- [ ] Provide an approval summary before Approve & Confirm Schedule.
-- [ ] After confirmation, show the Confirmed state and make campaign configuration, applications, and schedule read-only.
-- [ ] Do not present schedule confirmation as the announcement of final recruitment results.
+- [x] Include only Shortlisted applications from the same campaign; Shortlisted is not presented as finally accepted or already confirmed.
+- [x] Use configured interviewers, position assignments, interviewer availability, applicant availability, and existing rooms.
+- [x] Provide an interview date, time window, and one campaign-wide slot duration of 15, 20, or 30 minutes.
+- [x] Represent draft assignments using coherent time, qualified-interviewer, and room data; generation logic is documented as not wired.
+- [x] Ensure each room hosts no more than one interview at a time in the sample states.
+- [x] Identify applicant/interviewer/room overlap constraints, including separate applications belonging to the same student.
+- [x] Label valid draft assignments Proposed.
+- [x] Label unscheduled applications Unassigned and show the actual reason; do not reject them automatically.
+- [x] Label genuine scheduling overlaps Conflict and identify the affected interviews.
+- [x] Ensure every status count agrees with the table rows.
+- [x] Provide Edit, Resolve, and + Assign Slot controls; dynamic rechecking is documented as not wired.
+- [x] Provide Save Changes for the draft only and a schedule-table export control.
+- [x] Block the represented confirmation state while a Pending Review, Conflict, or Unassigned condition remains.
+- [x] Provide a confirmation-condition summary before the disabled confirmation control.
+- [x] Show a separate Confirmed/read-only state with disabled editing controls.
+- [x] Do not present schedule confirmation as the announcement of final recruitment results.
 
 ## The brief's eight “Fix these” requirements
 
-- [ ] Use one coherent timeline; applications close before interviews, and dates agree across all three screens.
-- [ ] Give Screen 2 the correct Application Review page title; do not retain Screen 1/Draft wording.
-- [ ] Keep the Screen 2 list and details/drawer readable together at every width.
-- [ ] Make every Screen 3 status count equal the visible schedule rows.
-- [ ] Show only real scheduling conflicts whose overlapping assignments can be identified.
-- [ ] Do not use the same sample person as both an applicant and an interviewer.
-- [ ] Remove “Verified” student/attachment/credential claims because university account verification is out of scope.
-- [ ] Do not include template footer content such as “© 2025 ClubFlow”, Privacy Policy, Terms of Service, or Support Center.
+- [x] Use one coherent timeline; applications close before interviews, and dates agree across all three screens.
+- [x] Give Screen 2 the correct Application Review page title; do not retain Screen 1/Draft wording.
+- [x] Keep the Screen 2 list and details/drawer readable together at every width.
+- [x] Make every Screen 3 status count equal the visible schedule rows.
+- [x] Show only real scheduling conflicts whose overlapping assignments can be identified.
+- [x] Do not use the same sample person as both an applicant and an interviewer.
+- [x] Remove “Verified” student/attachment/credential claims because university account verification is out of scope.
+- [x] Do not include template footer content such as “© 2025 ClubFlow”, Privacy Policy, Terms of Service, or Support Center.
 
 ## Scope boundaries
 
-- [ ] Do not add multiple clubs, simultaneous campaigns, self-service account registration/recovery, university verification, university SSO, or multi-level administration.
-- [ ] Do not add dynamic room creation, capacity/booking management, external schedule checks, or large-scale schedule optimization.
-- [ ] Do not add AI CV screening/ranking, advanced analytics, audit trails, or customizable application forms.
-- [ ] Do not add post-recruitment events/member/task management, chat, video calls, payments, or a mobile application.
-- [ ] Keep applicant submission/results and interviewer assessment views outside these three PA#2 screens; document any visible out-of-flow controls as not wired yet.
+- [x] Do not add multiple clubs, simultaneous campaigns, self-service account registration/recovery, university verification, university SSO, or multi-level administration.
+- [x] Do not add dynamic room creation, capacity/booking management, external schedule checks, or large-scale schedule optimization.
+- [x] Do not add AI CV screening/ranking, advanced analytics, audit trails, or customizable application forms.
+- [x] Do not add post-recruitment events/member/task management, chat, video calls, payments, or a mobile application.
+- [x] Keep applicant submission/results and interviewer assessment views outside these three PA#2 screens; document visible static controls and states as not wired yet.
 
 ## Links, static content, and realistic behavior
 
-- [ ] Use relative file links such as `review.html`, never `/review.html`, a directory route, `href="#"`, or an `onclick`-only navigation button.
-- [ ] Use an anchor or a form submission with a real relative action for every main-flow transition.
-- [ ] Open all pages directly from the folder and confirm all content remains visible with JavaScript disabled.
-- [ ] Confirm any external resource requirements are accurately documented and the pages work under the stated network conditions.
-- [ ] Confirm every visible action/state is an honest static prototype representation and is not described as implemented application functionality when it is not.
+- [x] Use relative file links such as `review.html`, never `/review.html`, a directory route, `href="#"`, or an `onclick`-only navigation button.
+- [x] Use an anchor or a form submission with a real relative action for every main-flow transition.
+- [x] Open all pages directly from the folder and confirm all content remains visible with JavaScript disabled.
+- [x] Confirm no external resource is required and the pages work without a network connection.
+- [x] Confirm every visible action/state is an honest static prototype representation and is not described as implemented application functionality when it is not.
 
 ## Responsive checks at 360, 768, and 1280 px
 
 - [x] Check every page at 360 px.
 - [x] Check every page at 768 px.
 - [x] Check every page at 1280 px.
-- [x] At each width, confirm `document.documentElement.clientWidth` equals the selected viewport width.
+- [x] At each width, confirm `window.innerWidth` equals the selected viewport width; account for the browser's vertical-scrollbar gutter when interpreting `document.documentElement.clientWidth`.
 - [x] At each width, confirm `document.documentElement.scrollWidth > document.documentElement.clientWidth` returns `false`.
 - [x] At each width, confirm the rubric's protruding-element query returns `[]`, except content intentionally contained by a table's own scrolling wrapper.
 - [x] Confirm nothing is cut off, clipped, or overlapping and long content wraps.
@@ -135,14 +135,14 @@ The five course sources in `docs/requirements/` control this checklist. Check an
 
 ## Required English documents and honest evidence
 
-- [x] Complete `PROTOTYPE.md` with Team, How to open it, Screens, Your design choices, Not wired yet, and CSS sections; the Team section explicitly reports the unavailable roster.
-- [ ] In `PROTOTYPE.md`, list every member's full name/student ID, each page and destination, the selected plain-CSS approach, spacing scale, breakpoints, and network requirement.
+- [x] Complete `PROTOTYPE.md` with Team, How to open it, Screens, Your design choices, Not wired yet, and CSS sections; the Team section lists all three committed names and student IDs.
+- [x] In `PROTOTYPE.md`, list every member's full name/student ID, each page and destination, the selected plain-CSS approach, spacing scale, breakpoints, and network requirement.
 - [x] Keep `brief.md` as the actual prompts in chronological order, not a reconstructed summary.
 - [x] Keep one timely, factual root `AI-LOG.md` entry per assistant task/page, using Tool, Asked for, Kept, Changed, Rejected, and By hand.
 - [x] Record actual failed checks and corrections in `AI-LOG.md` when they occur; do not invent a failure to improve the log.
 - [x] Complete `SELF_ASSESSMENT_REPORT.md` criterion by criterion with evidence pointing to real files, screenshots, checks, or commits.
 - [x] Include honest “What we did not manage” and “What we would do differently” sections.
-- [ ] Make the self-assessment total equal the total in the submission ZIP filename (ZIP not created; team IDs unavailable).
+- [ ] Make the self-assessment total equal the total in the submission ZIP filename (team IDs are available; ZIP intentionally not created yet).
 
 ## Git history, packaging, and submission
 

@@ -804,3 +804,625 @@ Choose one:
 
 Complete the requested Phase 3 work, show the final Git diff and status, then STOP for my review before committing.
 ```
+
+## Prompt 12 — 2026-11-08
+
+```text
+# ClubFlow PA#2 — Phase 4: Final Audit & Submission Preparation
+
+## Objective
+
+Perform the final independent audit and prepare ClubFlow PA#2 for submission.
+
+Phase 1: Approved wireframes — completed.
+Phase 2: Responsive HTML/CSS prototype — completed.
+Phase 3: W3C validation, screenshots, documentation and evidence — completed.
+
+Current branch: `feat/pa2-finalize`.
+
+This is the FINAL phase of PA#2.
+
+Do not implement new features, redesign the interface, or start PA#3.
+
+IMPORTANT: I must review and approve the final results before any new commit, push, or ZIP creation.
+
+## Task 1 — Verify repository state
+
+Read:
+- AGENTS.md
+- ClubFlow final project brief
+- PA#2 responsive prototype rubric
+- docs/SCREEN-CONTRACT.md
+- PROTOTYPE.md
+- brief.md
+- AI-LOG.md
+- SELF_ASSESSMENT_REPORT.md
+- docs/PA2-CHECKLIST.md
+
+Inspect:
+- Current Git branch.
+- Working tree and staged changes.
+- Recent commit history.
+- Phase 1, Phase 2 and Phase 3 commits.
+- All required project files.
+
+Confirm that Phase 3 was actually committed. Do not assume it was committed merely because a commit message was suggested.
+
+Do not rewrite existing commits or manufacture additional historical commits.
+
+## Task 2 — Final browser verification
+
+Verify the final committed implementation:
+
+- index.html
+- review.html
+- scheduling.html
+
+Use JavaScript disabled.
+
+Test all three pages at:
+- 360px
+- 768px
+- 1280px
+
+Verify:
+- Pages load directly from local files.
+- All main-flow navigation works.
+- No document-level horizontal overflow.
+- No clipping or overlapping elements.
+- Mobile buttons and standalone links are at least 44px high.
+- Long Vietnamese content wraps correctly.
+- Scheduling tables scroll within their own wrappers.
+- Semantic landmarks and headings are correct.
+- Labels and keyboard focus are accessible.
+- No missing local assets.
+
+Verify that the fictional CF-026 sample CV:
+- Exists.
+- Is a valid PDF.
+- Opens through the relative Review link.
+- Contains the expected synthetic information.
+
+Confirm that the business data remains consistent across screens:
+- 6 applications.
+- 5 distinct applicants.
+- 4 Shortlisted.
+- 1 Pending Review.
+- 1 Rejected.
+- 1 Proposed, 2 Conflict, 1 Unassigned.
+- Application deadline 30/10/2026.
+- Interview date 05/11/2026.
+
+Do not change implementation files unless a genuine submission-blocking defect is found. Report any such defect before making corrections.
+
+## Task 3 — Verify Phase 3 evidence
+
+Check that all nine screenshots exist:
+
+screenshots/
+- index-360.png
+- index-768.png
+- index-1280.png
+- review-360.png
+- review-768.png
+- review-1280.png
+- scheduling-360.png
+- scheduling-768.png
+- scheduling-1280.png
+
+Verify:
+- All PNGs are valid.
+- Widths match filenames.
+- Every screenshot corresponds to the final implementation.
+- Every image contains the complete page through the footer.
+- JavaScript was disabled when captured.
+- No blank pages, clipping, or missing content.
+
+Check:
+- checks/validator-index.txt
+- checks/validator-review.txt
+- checks/validator-scheduling.txt
+
+Verify that all three contain genuine current W3C HTML results with zero errors.
+
+Investigate any inconsistent validator metadata, including checker-version differences, without fabricating or rewriting validation results.
+
+CSS validation is not a required substitute for these three HTML checks. Keep unavailable CSS validation honestly marked NOT VERIFIED.
+
+Do not regenerate evidence unless it is demonstrably incorrect or outdated.
+
+## Task 4 — Finalize required documentation
+
+Review all required Markdown files for:
+- Accuracy.
+- Consistency with the final implementation.
+- Correct English.
+- Real evidence references.
+- Correct commit references.
+- No obsolete implementation status.
+- No fabricated team identities or claims.
+
+Verify that PROTOTYPE.md contains all six required sections.
+
+Verify that AI-LOG.md records actual assistant usage and corrections.
+
+Verify that brief.md contains the actual prompts.
+
+Verify SELF_ASSESSMENT_REPORT.md contains all seven rubric criteria, the claimed marks, concrete evidence, and honest reflections.
+
+### Team information
+
+Search the existing repository for authoritative team names and student IDs.
+
+If they are available, use only verified information.
+
+If any required team identity or student ID is unavailable:
+- Leave it unresolved.
+- Report exactly which details are missing.
+- Do not invent them.
+- Mark packaging as BLOCKED.
+
+Do not create a final submission ZIP while identities are missing.
+
+## Task 5 — Independent rubric assessment
+
+Evaluate the submission using the actual PA#2 rubric:
+
+| Criterion | Maximum |
+|---|---:|
+| Three linked screens | 20 |
+| Responsive layout | 25 |
+| Semantic and valid HTML | 20 |
+| Design you can check | 10 |
+| Brief and rules | 10 |
+| AI-LOG.md | 10 |
+| Commit history | 5 |
+| TOTAL | 100 |
+
+The current self-assessment claims 98/100.
+
+Do not automatically accept this score.
+
+Independently review every criterion, especially commit history and whether the evidence supports full marks.
+
+For each criterion, report:
+- Maximum score.
+- Current claimed score.
+- Independently estimated score.
+- Supporting evidence.
+- Reason for any deduction.
+- Confidence level.
+
+Recommend a revised total if the existing claim is not sufficiently supported.
+
+Do not change the self-assessment total without reporting the rationale for my review.
+
+## Task 6 — Submission ZIP readiness
+
+Verify the repository can be packaged according to the PA#2 rubric.
+
+The final ZIP must:
+- Contain the repository folder itself.
+- Include the hidden .git directory and history.
+- Include all required HTML, CSS, assets and documentation.
+- Include all nine screenshots.
+- Include the three W3C HTML validation files.
+- Include the valid fictional PDF.
+- Exclude node_modules and unnecessary temporary files.
+- Exclude secrets, credentials, and irrelevant generated artifacts.
+
+Do not use GitHub Download ZIP or git archive because they omit .git.
+
+Be careful with Windows archive tools that may omit hidden directories. A ZIP creation method must explicitly preserve .git.
+
+Expected filename:
+
+<StudentID1>-<StudentID2>-<StudentID3>_<score>.zip
+
+Use actual student IDs in ascending order.
+
+The score in the filename must equal the final claimed total in SELF_ASSESSMENT_REPORT.md.
+
+Do not create the ZIP yet.
+
+Instead, report:
+- Proposed ZIP filename.
+- Expected repository folder structure.
+- Included and excluded files.
+- Whether packaging is currently possible.
+- Any outstanding requirements.
+
+## Task 7 — Final checklist
+
+Classify each requirement as:
+- PASS
+- FAIL
+- NOT VERIFIED
+- NOT APPLICABLE
+
+Distinguish:
+1. Submission blockers.
+2. Non-blocking rubric deductions.
+3. Optional improvements outside PA#2.
+
+Do not make unnecessary improvements merely to achieve a theoretical perfect score.
+
+## Final report
+
+Produce:
+
+### 1. Git and repository status
+Current branch, HEAD, recent commits, working-tree state.
+
+### 2. Final browser audit
+Nine viewport results and essential functional verification.
+
+### 3. Validation and screenshot audit
+Actual evidence status.
+
+### 4. Documentation audit
+Required files and remaining placeholders.
+
+### 5. Independent rubric estimate
+Detailed score out of 100.
+
+### 6. Submission package plan
+Proposed ZIP name, folder structure, inclusion/exclusion verification.
+
+### 7. Remaining issues
+Severity, evidence, and exact corrective action.
+
+### 8. Final verdict
+
+Choose exactly one:
+
+- READY FOR FINAL APPROVAL
+- READY WITH MINOR ISSUES
+- BLOCKED — MISSING REQUIRED INFORMATION
+- NOT READY — FIX REQUIRED
+
+## Restrictions
+
+- Stay on feat/pa2-finalize.
+- Do not create new branches.
+- Do not merge or rebase.
+- Do not commit or push.
+- Do not create the final ZIP yet.
+- Do not install dependencies.
+- Do not rewrite Git history.
+- Do not modify approved HTML/CSS without reporting a confirmed blocker.
+- Preserve all existing source files and evidence.
+- Do not claim submission has occurred.
+
+Perform the final audit, report the results, and STOP for my approval.
+```
+
+## Prompt 13 — 2026-11-08
+
+```text
+# ClubFlow PA#2 — Final Source Refactoring & Repository Cleanup
+
+## Role
+
+Act as a senior frontend engineer and code reviewer.
+
+Perform a final cleanup and maintainability refactor of the ClubFlow PA#2 repository before submission.
+
+Current branch: `feat/pa2-finalize`.
+
+Phase 1, Phase 2, and Phase 3 have already been completed and validated.
+
+This is a cleanup task, NOT a redesign or feature-development phase.
+
+## 1. Inspect before changing anything
+
+Read and inspect:
+
+- `AGENTS.md`
+- `index.html`
+- `review.html`
+- `scheduling.html`
+- `assets/css/styles.css`
+- `PROTOTYPE.md`
+- `brief.md`
+- `AI-LOG.md`
+- `SELF_ASSESSMENT_REPORT.md`
+- `README.md`
+- `docs/`
+- `screenshots/`
+- `checks/`
+- Relevant project requirements and PA#2 rubric
+
+Also inspect:
+- Git status and recent commits.
+- Existing file and folder structure.
+- References between files.
+- Current responsive implementation.
+
+Identify:
+1. Duplicated code.
+2. Unused CSS selectors.
+3. Redundant HTML wrappers.
+4. Unnecessary files or documentation.
+5. Inconsistent naming.
+6. Repeated or outdated explanations.
+7. Overly complicated structures.
+8. Dead references and unused assets.
+9. Any source organization that can be simplified safely.
+
+Classify each proposed change as:
+- SAFE CLEANUP
+- REQUIRES REGRESSION TESTING
+- SHOULD BE DEFERRED
+
+Do not delete or modify anything until its purpose has been verified.
+
+## 2. Refactor HTML
+
+Review all three HTML pages.
+
+Objectives:
+- Improve readability and formatting.
+- Simplify unnecessary nesting.
+- Remove genuinely redundant markup.
+- Maintain consistent class naming.
+- Preserve semantic HTML5.
+- Keep forms, labels, links, and buttons correct.
+- Preserve all accessibility attributes that are still required.
+- Keep the three-screen workflow understandable.
+
+Do NOT:
+- Remove required UI features.
+- Modify fictional application data.
+- Change campaign dates, IDs, positions, or statuses.
+- Remove validation, Published, or Confirmed examples.
+- Remove the fictional CV link.
+- Break relative navigation.
+- Introduce JavaScript or a frontend framework.
+- Change the approved visual appearance.
+
+Preserve exactly one meaningful h1 per page and the existing heading hierarchy.
+
+## 3. Refactor CSS
+
+Review `assets/css/styles.css`.
+
+Objectives:
+- Consolidate genuinely duplicated declarations.
+- Remove selectors proven unused across all three pages.
+- Reuse existing design tokens.
+- Preserve the spacing scale.
+- Improve selector organization.
+- Reduce unnecessary overrides.
+- Keep responsive rules easy to maintain.
+- Simplify repeated components where safe.
+
+Prefer the existing CSS architecture.
+
+Do NOT:
+- Replace the stylesheet with a new design system.
+- Introduce Tailwind, Bootstrap, or dependencies.
+- Add unnecessary utility classes.
+- Introduce `!important`.
+- Use `overflow-x: hidden` to conceal layout defects.
+- Remove focus-visible styles.
+- Reduce text contrast.
+- Reduce mobile touch-target sizes below 44px.
+- Break internal table scrolling.
+
+Preserve responsive behavior at 360, 768, and 1280px.
+
+## 4. Repository cleanup
+
+Audit the repository structure.
+
+### Required files — preserve
+
+- Three HTML pages and shared CSS.
+- `AGENTS.md` or the existing project rules file.
+- `PROTOTYPE.md`
+- `brief.md`
+- `AI-LOG.md`
+- `SELF_ASSESSMENT_REPORT.md`
+- All nine required screenshots.
+- Three official W3C HTML validation records.
+- The fictional CV PDF.
+- `.git/` and its history.
+
+Do not remove approved wireframe references required to explain design choices.
+
+### Optional documentation
+
+Review files such as:
+
+- `docs/PA2-CHECKLIST.md`
+- `docs/SCREEN-CONTRACT.md`
+- `docs/TASKS.md`
+- Supporting README files.
+
+These are not individually required by the PA#2 rubric.
+
+For each file, determine whether it:
+1. Contains useful project decisions or evidence.
+2. Is referenced by required documents or repository rules.
+3. Duplicates another document.
+4. Contains stale or contradictory information.
+5. Is worth retaining for future PA#3 development.
+
+Prefer keeping useful documentation rather than deleting it merely to reduce the file count.
+
+For optional files proposed for deletion, report the reason and wait for my approval. Do not delete them automatically.
+
+## 5. Documentation consistency
+
+Review required documentation for:
+
+- Contradictory descriptions.
+- Outdated implementation status.
+- Broken relative references.
+- Incorrect file names.
+- Redundant explanations.
+- Incorrect claims about functionality.
+- Missing or unverified submission information.
+
+Keep all required documentation in English.
+
+Important:
+- `brief.md` must preserve the actual historical prompts.
+- `AI-LOG.md` must preserve honest records of assistant usage.
+- Do not rewrite historical prompts or logs merely to make them shorter.
+- Do not invent team names, student IDs, test outcomes, or contributions.
+- Do not artificially inflate self-assessment scores.
+
+If changes are made, append a concise, factual AI-LOG entry describing the refactor.
+
+## 6. Preservation requirements
+
+The following functionality and sample data must remain unchanged:
+
+### Campaign
+- Correct campaign timeline.
+- Required fields and validation.
+- Disabled invalid Publish state.
+- Draft, Preview, and Published representations.
+
+### Application Review
+- 6 applications.
+- 5 distinct applicants.
+- 4 Shortlisted.
+- 1 Pending.
+- 1 Rejected.
+- Correct sorting and pagination.
+- Functional fictional CV PDF link.
+
+### Interview Scheduling
+- 4 shortlisted applications.
+- 1 Proposed.
+- 2 Conflict.
+- 1 Unassigned.
+- Genuine conflict explanations.
+- Blocked confirmation conditions.
+- Confirmed/read-only example.
+
+All three pages must maintain consistent campaign identities, positions, dates, and application IDs.
+
+## 7. Mandatory regression testing
+
+If any HTML or CSS is changed, rerun browser tests with JavaScript disabled.
+
+Test every page at:
+
+- 360px
+- 768px
+- 1280px
+
+Verify:
+- Exact viewport widths.
+- No document-level horizontal overflow.
+- No unexpected clipping.
+- No overlapping content or controls.
+- Long content wraps.
+- Tables scroll within their wrappers.
+- Standalone mobile controls are at least 44px tall.
+- Labels and keyboard focus work.
+- All links and the PDF resolve.
+- No missing local assets.
+- No regression in data consistency.
+
+Use the existing Phase 3 screenshots as the visual baseline.
+
+Compare before/after renders and report any differences.
+
+A cleanup should not introduce visible design changes.
+
+### Evidence synchronization
+
+If HTML or CSS changes:
+- Revalidate all three final HTML files using the official W3C Nu checker.
+- Require zero errors.
+- Refresh the three validator evidence files if needed.
+- Regenerate all nine submission screenshots from the final implementation.
+- Visually inspect all nine.
+- Ensure evidence represents the final source.
+
+If the official validator is unavailable, report NOT VERIFIED and do not claim the old results validate changed HTML.
+
+If changes affect documentation only, do not regenerate visual evidence unnecessarily.
+
+Never fabricate or silently reuse stale validation evidence.
+
+## 8. Final quality audit
+
+Check:
+
+- `git diff --check`
+- No unexpected file changes.
+- No broken links.
+- No missing assets.
+- No unused dependencies.
+- No JavaScript introduced.
+- No semantic HTML regression.
+- No CSS responsiveness regression.
+- No loss of required submission files.
+- No rewritten Git history.
+- No unapproved removal of optional documents.
+
+Evaluate whether the cleanup materially improves maintainability.
+
+Do not make cosmetic changes solely to increase the diff size.
+
+## 9. Required final report
+
+Provide:
+
+### A. Initial findings
+- Duplicated or unnecessary source.
+- Unused CSS.
+- Documentation issues.
+- Repository organization issues.
+
+### B. Changes made
+For each changed file:
+- What changed.
+- Why it was necessary.
+- Whether functionality or visuals changed.
+
+### C. Proposed deletions
+List optional files that could be removed, with reasons.
+
+Do not delete them yet.
+
+### D. Regression results
+Report all browser checks actually executed.
+
+### E. Evidence status
+Confirm whether existing screenshots and W3C records still represent the final source.
+
+### F. Final Git diff
+Show changed files and a concise diff summary.
+
+### G. Final verdict
+Choose:
+
+- CLEANUP COMPLETE — READY FOR REVIEW
+- CLEANUP COMPLETE WITH MINOR ISSUES
+- REGRESSION FOUND — FIX REQUIRED
+- INCOMPLETE — VERIFICATION REQUIRED
+
+## Restrictions
+
+- Stay on `feat/pa2-finalize`.
+- Do not create or switch branches.
+- Do not merge or rebase.
+- Do not rewrite commit history.
+- Do not commit or push.
+- Do not create the submission ZIP.
+- Do not install dependencies.
+- Do not redesign the interface.
+- Do not delete optional documentation without approval.
+- Do not modify team identities or self-assessment scores without verified evidence.
+
+Apply only safe, justified refactors.
+
+Show the final diff and STOP for my review before committing.
+```

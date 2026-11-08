@@ -1,5 +1,7 @@
 # ClubFlow Figma Wireframe Plan
 
+Status: historical pre-implementation plan. The approved raster references now live in `docs/design/`, and the implemented alignment status is recorded in `docs/design/README.md`. The unchecked review list below preserves the original planning record rather than asserting current incompleteness.
+
 ## Purpose
 
 Prepare a responsive, reviewable wireframe for the three PA#2 Executive screens before implementation: Create Recruitment Campaign, Application Review, and Interview Scheduling. The wireframe will make the main flow and the information hierarchy clear while staying within the course brief and the repository's static HTML5 and plain CSS constraints.

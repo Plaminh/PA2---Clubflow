@@ -351,8 +351,7 @@ main.container {
   align-items: start;
 }
 
-.card,
-.placeholder {
+.card {
   min-width: 0;
   padding: var(--space-4);
   border: 1px solid var(--color-border);
@@ -360,8 +359,7 @@ main.container {
   background: var(--color-surface);
 }
 
-.card > :last-child,
-.placeholder > :last-child {
+.card > :last-child {
   margin-bottom: 0;
 }
 
@@ -390,8 +388,7 @@ main.container {
   min-width: 0;
 }
 
-.field label,
-.field-label {
+.field label {
   display: block;
   margin-bottom: var(--space-1);
   color: var(--color-text);
@@ -405,8 +402,7 @@ main.container {
 
 .field input,
 .field select,
-.field textarea,
-.control {
+.field textarea {
   display: block;
   width: 100%;
   min-height: 2.75rem;
@@ -430,8 +426,7 @@ main.container {
 
 .field input:focus-visible,
 .field select:focus-visible,
-.field textarea:focus-visible,
-.control:focus-visible {
+.field textarea:focus-visible {
   border-color: var(--color-brand-strong);
   outline-color: var(--color-focus);
 }
@@ -599,8 +594,7 @@ main.container {
   background: var(--color-danger-text);
 }
 
-.button:disabled,
-.button[aria-disabled="true"] {
+.button:disabled {
   border-color: var(--color-border);
   color: var(--color-muted);
   background: var(--color-surface-subtle);
